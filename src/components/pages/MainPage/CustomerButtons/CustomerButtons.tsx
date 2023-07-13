@@ -25,7 +25,7 @@ export default function CustomerButtons({ withSign }: CustomerButtonsProps): Rea
                 border="none"
                 withIcon={false}
             />
-            <Image src="/icons/curved-line.jpg" alt="" width={31} height={36} />
+            <Image src="./sotka-study/icons/curved-line.jpg" alt="" width={31} height={36} />
         </div>
     );
 }
