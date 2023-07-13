@@ -1,0 +1,27 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: $md2) {
+        gap: 0;
+        flex-direction: column;
+    }
+}
+
+.item {
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $md2) {
+        width: 250px;
+        padding: 15px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+}

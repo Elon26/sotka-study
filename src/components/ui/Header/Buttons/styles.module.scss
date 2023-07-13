@@ -1,0 +1,12 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: $md2) {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,59 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    border-radius: 12px;
+    transition: background-color 0.3s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini {
+    width: 100px;
+    height: 40px;
+
+    &.withIcon {
+        gap: 10px;
+    }
+}
+
+.small {
+    width: 150px;
+    height: 40px;
+}
+
+.middle {
+    width: 180px;
+    height: 55px;
+}
+
+.big {
+    width: 280px;
+    height: 60px;
+
+    &.withIcon {
+        gap: 40px;
+
+        @media (max-width: $md2) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.blue {
+    background-color: $blue;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $blueHover;
+        }
+    }
+}
+
+.whiteBorder {
+    border: 2px solid #ffffff;
+}
+
+.badsvg {
+    transform: translate(0%, 1.5px);
+}

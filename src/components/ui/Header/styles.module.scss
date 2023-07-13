@@ -1,0 +1,18 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #262626;
+    background-color: #000000;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
