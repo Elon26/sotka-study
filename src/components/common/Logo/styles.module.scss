@@ -1,3 +1,5 @@
+@import "../../../data/variables.scss";
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -8,14 +10,14 @@
     display: inline-block;
     width: 2px;
     height: 15px;
-    background-color: #ffffff;
+    background-color: $color-white;
 }
 
 .secondcircle {
     display: inline-block;
     width: 10px;
     height: 22.5px;
-    border: 2px solid #ffffff;
+    border: 2px solid $color-white;
     border-radius: 50%;
 }
 
@@ -23,14 +25,14 @@
     display: inline-block;
     width: 20px;
     height: 30px;
-    border: 2px solid #ffffff;
+    border: 2px solid $color-white;
     border-radius: 50%;
 }
 
 .fourthcircle {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #ffffff;
+    border: 2px solid $color-white;
     border-radius: 36px;
     text-transform: uppercase;
 }

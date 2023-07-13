@@ -1,0 +1,15 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    font-size: 48px;
+    text-align: center;
+
+    @media (max-width: $md2) {
+        font-size: 32px;
+    }
+
+    @media (max-width: $md3) {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+}

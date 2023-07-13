@@ -6,7 +6,7 @@ interface LinkButtonProps {
     text: string
     link: string
     size: "mini" | "small" | "middle" | "big"
-    color: "blue" | "transparent"
+    color: "blue" | "purple" | "gray-dark" | "transparent"
     border: "none" | "white"
     withIcon: boolean
 }
@@ -22,10 +22,12 @@ export default function LinkButton({ text, link, size, color, border, withIcon }
                 ${size === "middle" && styles.middle}
                 ${size === "big" && styles.big}
                 ${color === "blue" && styles.blue}
+                ${color === "purple" && styles.purple}
+                ${color === "gray-dark" && styles.grayDark}
                 ${border === "white" && styles.whiteBorder}
                 ${withIcon && styles.withIcon}
                 `}>
-            {link === "login" && <BsBoxArrowInRight className={`${size === "mini" && styles.badsvg}`} />}
+            {link === "login" && <BsBoxArrowInRight />}
             <span>{text}</span>
         </Link>
     );

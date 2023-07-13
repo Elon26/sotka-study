@@ -41,19 +41,35 @@
 }
 
 .blue {
-    background-color: $blue;
+    background-color: $color-blue;
 
     @media (hover: hover) {
         &:hover {
-            background-color: $blueHover;
+            background-color: $color-blue-hover;
+        }
+    }
+}
+
+.purple {
+    background-color: $color-purple;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-purple-hover;
+        }
+    }
+}
+
+.grayDark {
+    background-color: $color-gray-dark;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-gray-dark-hover;
         }
     }
 }
 
 .whiteBorder {
-    border: 2px solid #ffffff;
-}
-
-.badsvg {
-    transform: translate(0%, 1.5px);
+    border: 2px solid $color-white;
 }

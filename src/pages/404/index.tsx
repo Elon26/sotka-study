@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "./styles.module.scss";
 import LinkButton from "@/components/common/LinkButton/LinkButton";
+import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
 
 export default function Comment(): React.ReactElement {
-    const text = "Страница не найдена! :'(";
-
     return (
         <>
             <Head>
@@ -16,7 +15,9 @@ export default function Comment(): React.ReactElement {
             <main>
                 <div className="container">
                     <div className={styles.body}>
-                        <h1 className={styles.title}>{text}</h1>
+                        <SecondPageHeader
+                            firstLine="Страница не найдена! :'("
+                        />
                         <LinkButton
                             text="Вернуться"
                             link="/"

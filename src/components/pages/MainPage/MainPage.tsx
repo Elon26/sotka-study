@@ -1,17 +1,24 @@
+import { useState } from "react";
 import styles from "./styles.module.scss";
+import MainSwitch from "./MainSwitch/MainSwitch";
+import StudentsArea from "./StudentsArea/StudentsArea";
+import ParentsArea from "./ParentsArea/ParentsArea";
+import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
 
 export default function MainPage(): React.ReactElement {
+    const [mainSwitch, setMainSwitch] = useState<"students" | "parents">("students");
+
     return (
-        <div className="container">
-            <p>Главная страница!!</p>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <p>Главная страница!!</p>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <p>Главная страница!!</p>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <p>Главная страница!!</p>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <p>Главная страница!!</p>
-        </div>
+        <>
+            <MainSwitch
+                mainSwitch={mainSwitch}
+                changeMainSwitch={value => setMainSwitch(value)}
+            />
+            <WhiteSpace
+                size="big"
+            />
+            {mainSwitch === "students" && <StudentsArea />}
+            {mainSwitch === "parents" && <ParentsArea />}
+        </>
     );
 }
