@@ -28,11 +28,23 @@ export default function GiftPicture(): React.ReactElement {
             </div>
             2
             <div className={styles.DELETEME} >
-                <img src="../next.svg" />
+                <img src="./next.svg" />
             </div>
             3
             <div className={styles.DELETEME} >
-                <img src="./next.svg" />
+                <img src="../next.svg" />
+            </div>
+            4
+            <div className={styles.DELETEME} >
+                <img src="public/next.svg" />
+            </div>
+            5
+            <div className={styles.DELETEME} >
+                <img src="./public/next.svg" />
+            </div>
+            6
+            <div className={styles.DELETEME} >
+                <img src="../public/next.svg" />
             </div>
         </div>
     );
