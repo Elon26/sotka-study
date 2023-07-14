@@ -11,9 +11,20 @@
 
 .textarea {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 29%;
     transform: rotate(10deg);
+
+    @media (max-width: $md1) {
+    }
+    @media (max-width: $md2) {
+    }
+    @media (max-width: $md3) {
+    }
+    @media (max-width: $md4) {
+    }
+    @media (max-width: $md5) {
+    }
 }
 
 .text {
@@ -24,12 +35,42 @@
     line-height: 1.2;
     font-size: 24px;
     color: $color-purple;
+
+    @media (max-width: $md1) {
+        font-size: 20px;
+        padding: 7.5px 15px;
+    }
+    @media (max-width: $md2) {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    @media (max-width: $md3) {
+        font-size: 16px;
+    }
+    @media (max-width: $md4) {
+    }
+    @media (max-width: $md5) {
+    }
 }
 
 .big {
     font-size: 28px;
     font-weight: bold;
     color: $color-white;
+
+    @media (max-width: $md1) {
+        font-size: 24px;
+    }
+    @media (max-width: $md2) {
+        font-size: 20px;
+    }
+    @media (max-width: $md3) {
+        font-size: 18px;
+    }
+    @media (max-width: $md4) {
+    }
+    @media (max-width: $md5) {
+    }
 }
 
 .withLine {
@@ -62,4 +103,8 @@
             right: -4px;
         }
     }
+}
+
+.DELETEME {
+    background-color: #ffffff;
 }

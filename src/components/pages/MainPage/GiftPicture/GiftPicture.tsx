@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 export default function GiftPicture(): React.ReactElement {
     return (
         <div className="container">
-            <div className={styles.wrapper}>
+            {/* <div className={styles.wrapper}>
                 <img className={styles.img} src="images/main-page/stats.webp" alt="график" />
                 <div className={styles.textarea}>
                     <div className={styles.text}>
@@ -20,6 +20,19 @@ export default function GiftPicture(): React.ReactElement {
                         <span></span>
                     </div>
                 </div>
+            </div> */}
+
+            1
+            <div className={styles.DELETEME} >
+                <img src="next.svg" />
+            </div>
+            2
+            <div className={styles.DELETEME} >
+                <img src="../next.svg" />
+            </div>
+            3
+            <div className={styles.DELETEME} >
+                <img src="./next.svg" />
             </div>
         </div>
     );
