@@ -1,6 +1,5 @@
 import LinkButton from "@/components/common/LinkButton/LinkButton";
 import styles from "./styles.module.scss";
-import Image from "next/image";
 
 interface CustomerButtonsProps {
     withSign: boolean
@@ -26,12 +25,7 @@ export default function CustomerButtons({ withSign }: CustomerButtonsProps): Rea
                 withIcon={false}
             />
 
-            {withSign && <Image
-                src="icons/curvedLine.jpg"
-                alt="Line"
-                width={31}
-                height={36}
-            />}
+            {withSign && <img src="icons/curvedLine.jpg" alt="Line" />}
         </div>
     );
 }
