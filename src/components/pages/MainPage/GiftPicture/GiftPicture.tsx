@@ -10,10 +10,9 @@ export default function GiftPicture(): React.ReactElement {
                 <Image
                     className={styles.image}
                     src={statsImg}
-                    // srcSet
                     alt="график"
-                    width={1920}
-                    height={557}
+                    width={1240}
+                    height={360}
                     placeholder="blur"
                 />
                 <div className={styles.textarea}>
