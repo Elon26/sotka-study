@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import LinkButton from "@/components/common/LinkButton/LinkButton";
 import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
+import { githubHomePageUrl } from "../../data/contants.json";
 
 export default function Comment(): React.ReactElement {
     return (
@@ -10,7 +11,7 @@ export default function Comment(): React.ReactElement {
                 <title>Страница не найдена</title>
                 <meta name="description" content="Курсы подготовки к ЕГЭ и ОГЭ" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="favicon.png" />
+                <link rel="icon" href={githubHomePageUrl + "favicon.png"} />
             </Head>
             <main>
                 <div className="container">
