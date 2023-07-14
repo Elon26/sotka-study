@@ -6,9 +6,8 @@ export default function GiftPicture(): React.ReactElement {
     return (
         <div className="container">
             <div className={styles.wrapper}>
-                {/* <img className={styles.img} src={githubHomePageUrl + "images/main-page/stats.webp"} alt="график" /> */}
                 <Image
-                    className={styles.img}
+                    className={styles.image}
                     src={githubHomePageUrl + "images/main-page/stats.webp"}
                     alt="график"
                     width={1920}
