@@ -1,11 +1,19 @@
 import styles from "./styles.module.scss";
 import { githubHomePageUrl } from "../../../../data/contants.json";
+import Image from "next/image";
 
 export default function GiftPicture(): React.ReactElement {
     return (
         <div className="container">
             <div className={styles.wrapper}>
-                <img className={styles.img} src={githubHomePageUrl + "images/main-page/stats.webp"} alt="график" />
+                {/* <img className={styles.img} src={githubHomePageUrl + "images/main-page/stats.webp"} alt="график" /> */}
+                <Image
+                    className={styles.img}
+                    src={githubHomePageUrl + "images/main-page/stats.webp"}
+                    alt="график"
+                    width={1920}
+                    height={557}
+                />
                 <div className={styles.textarea}>
                     <div className={styles.text}>
                         <span>ещё </span>
