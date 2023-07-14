@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import SimpleText from "@/components/common/SimpleText/SimpleText";
 import CustomerButtons from "../CustomerButtons/CustomerButtons";
 import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
+import GiftPicture from "../GiftPicture/GiftPicture";
 
 export default function StudentsArea(): React.ReactElement {
     return (
@@ -27,8 +28,7 @@ export default function StudentsArea(): React.ReactElement {
             <WhiteSpace
                 size="middle"
             />
-
-
+            <GiftPicture />
         </>
     );
 }

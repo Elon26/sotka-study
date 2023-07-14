@@ -1,0 +1,65 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.textarea {
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    transform: rotate(10deg);
+}
+
+.text {
+    font-weight: 500;
+    border: 2px solid $color-white;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 24px;
+    color: $color-purple;
+}
+
+.big {
+    font-size: 28px;
+    font-weight: bold;
+    color: $color-white;
+}
+
+.withLine {
+    text-decoration: underline;
+    color: $color-white;
+    font-weight: bold;
+}
+
+.effects {
+    span {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: $color-white;
+
+        &:nth-child(1) {
+            top: -4px;
+            left: -4px;
+        }
+        &:nth-child(2) {
+            top: -4px;
+            right: -4px;
+        }
+        &:nth-child(3) {
+            bottom: -4px;
+            left: -4px;
+        }
+        &:nth-child(4) {
+            bottom: -4px;
+            right: -4px;
+        }
+    }
+}
