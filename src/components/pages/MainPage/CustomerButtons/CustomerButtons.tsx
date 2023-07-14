@@ -25,7 +25,7 @@ export default function CustomerButtons({ withSign }: CustomerButtonsProps): Rea
                 withIcon={false}
             />
 
-            {withSign && <img src="favicon.png" alt="" />}
+            {withSign && <img src="icons/curvedLine.jpg" alt="" />}
         </div>
     );
 }
