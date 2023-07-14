@@ -15,7 +15,7 @@ export default function MainPage(): React.ReactElement {
                 changeMainSwitch={value => setMainSwitch(value)}
             />
             <WhiteSpace
-                size="big"
+                size="middle"
             />
             {mainSwitch === "students" && <StudentsArea />}
             {mainSwitch === "parents" && <ParentsArea />}

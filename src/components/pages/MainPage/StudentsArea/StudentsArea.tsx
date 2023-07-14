@@ -12,20 +12,23 @@ export default function StudentsArea(): React.ReactElement {
                 secondLine="с любого уровня на нужный балл"
             />
             <WhiteSpace
-                size="big"
+                size="middle"
             />
             <SimpleText
                 text="всего от 3 650 ₽ за 4 предмета в месяц без доплат за 2-ой, 3-ий и 4-ый предмет!"
             />
             <WhiteSpace
-                size="big"
+                size="middle"
             />
             <CustomerButtons
                 withSign={true}
+                target="students"
             />
             <WhiteSpace
-                size="big"
+                size="middle"
             />
+
+
         </>
     );
 }

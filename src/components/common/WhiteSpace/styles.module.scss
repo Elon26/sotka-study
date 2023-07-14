@@ -1,11 +1,25 @@
+@import "../../../data/variables.scss";
+
 .small {
     margin-bottom: 20px;
+
+    @media (max-width: $md3) {
+        margin-bottom: 10px;
+    }
 }
 
 .middle {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+
+    @media (max-width: $md3) {
+        margin-bottom: 20px;
+    }
 }
 
 .big {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+
+    @media (max-width: $md3) {
+        margin-bottom: 30px;
+    }
 }
