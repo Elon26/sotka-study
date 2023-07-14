@@ -50,6 +50,18 @@ export default function GiftPicture(): React.ReactElement {
             <div className={styles.DELETEME} >
                 <img src="/blob/main/next.svg" />
             </div>
+            8
+            <div className={styles.DELETEME} >
+                <img src="@/public/next.svg" />
+            </div>
+            9
+            <div className={styles.DELETEME} >
+                <img src="https://elon26.github.io/sotka-study/next.svg" />
+            </div>
+            10
+            <div className={styles.DELETEME} >
+                <img src="https://elon26.github.io/sotka-study/images/next.svg" />
+            </div>
         </div>
     );
 }
