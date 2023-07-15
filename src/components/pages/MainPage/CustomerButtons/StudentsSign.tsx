@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
 import { calcNextMonth } from "./CalcNextMonth";
-import { githubHomePageUrl } from "../../../../data/contants.json";
 import Image from "next/image";
 import curvedLine from "public/icons/curvedLine.jpg";
 

@@ -4,6 +4,8 @@ import SimpleText from "@/components/common/SimpleText/SimpleText";
 import CustomerButtons from "../CustomerButtons/CustomerButtons";
 import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
 import GiftPicture from "../GiftPicture/GiftPicture";
+import Statistic from "../Statistic/Statistic";
+import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
 
 export default function StudentsArea(): React.ReactElement {
     return (
@@ -29,6 +31,19 @@ export default function StudentsArea(): React.ReactElement {
                 size="middle"
             />
             <GiftPicture />
+            <WhiteSpace
+                size="middle"
+            />
+            <Statistic />
+            <WhiteSpace
+                size="middle"
+            />
+            <SecondPageHeader
+                firstLine="Уверен, что сдашь экзамены на нужный балл?"
+            />
+            <WhiteSpace
+                size="middle"
+            />
         </>
     );
 }

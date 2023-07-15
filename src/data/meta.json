@@ -1,0 +1,26 @@
+[
+    {
+        "id": "89343fbd31ohk01",
+        "name": "totalStudents",
+        "title": 60114,
+        "description": "количество учеников"
+    },
+    {
+        "id": "89343fbd31ohk02",
+        "name": "excellentStudents",
+        "title": 13521,
+        "description": "сдали на 80+ баллов"
+    },
+    {
+        "id": "89343fbd31ohk03",
+        "name": "perfectStudents",
+        "title": 429,
+        "description": "сдали на 100 баллов"
+    },
+    {
+        "id": "89343fbd31ohk04",
+        "name": "certificate",
+        "title": "ФИПИ",
+        "description": "сертификат у преподавателей"
+    }
+]

@@ -1,20 +1,31 @@
 import styles from "./styles.module.scss";
-import { githubHomePageUrl } from "../../../../data/contants.json";
 import Image from "next/image";
-import statsImg from "public/images/main-page/stats.webp";
+import statsImgBig from "public/images/main-page/stats.webp";
+import statsImgSmall from "public/images/main-page/stats-mobile.webp";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 export default function GiftPicture(): React.ReactElement {
+    const { windowWidth } = useWindowDimensions();
+
     return (
         <div className="container">
             <div className={styles.wrapper}>
-                <Image
+                {windowWidth >= 768 && <Image
                     className={styles.image}
-                    src={statsImg}
+                    src={statsImgBig}
                     alt="график"
                     width={1240}
                     height={360}
                     placeholder="blur"
-                />
+                />}
+                {windowWidth < 768 && <Image
+                    className={styles.image}
+                    src={statsImgSmall}
+                    alt="график"
+                    width={768}
+                    height={300}
+                    placeholder="blur"
+                />}
                 <div className={styles.textarea}>
                     <div className={styles.text}>
                         <span>ещё </span>

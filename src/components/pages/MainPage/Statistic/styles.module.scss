@@ -1,0 +1,36 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    display: flex;
+
+    @media (max-width: $md4) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.item {
+    flex: 1 1 25%;
+    text-align: center;
+    &:not(:last-child) {
+        border-right: 2px solid $color-white;
+    }
+
+    @media (max-width: $md4) {
+        &:not(:last-child) {
+            border-right: none;
+        }
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin: 0 auto;
+    max-width: 120px;
+}
