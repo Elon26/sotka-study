@@ -56,7 +56,7 @@ export default function TeacherArea({
                 <div className={styles.buttons}>
                     <LinkButton
                         text="Подробнее обо мне"
-                        link={"teachers/" + discipline + (isOge ? "-oge" : "")}
+                        link={"/teachers/" + discipline + (isOge ? "-oge" : "")}
                         size="custom"
                         color="black"
                         border="none"

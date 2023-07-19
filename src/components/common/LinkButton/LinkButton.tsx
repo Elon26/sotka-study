@@ -29,7 +29,7 @@ export default function LinkButton({ text, link, size, color, border, withIcon }
                 ${border === "white" && styles.whiteBorder}
                 ${withIcon && styles.withIcon}
                 `}>
-            {withIcon && link === "login" && <BsBoxArrowInRight />}
+            {withIcon && link === "/login" && <BsBoxArrowInRight />}
             <span>{text}</span>
         </Link>
     );

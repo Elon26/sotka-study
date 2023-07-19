@@ -11,7 +11,7 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
             {screen === "big" && (<>
                 <LinkButton
                     text="Войти"
-                    link="login"
+                    link="/login"
                     size="mini"
                     color="transparent"
                     border="none"
@@ -29,7 +29,7 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
             {screen === "small" && (<>
                 <LinkButton
                     text="Войти на платформу"
-                    link="login"
+                    link="/login"
                     size="big"
                     color="transparent"
                     border="white"

@@ -7,26 +7,26 @@
     {
         "id": "89543fsd34olk02",
         "label": "преподаватели",
-        "link": "teachers"
+        "link": "/teachers"
     },
     {
         "id": "89543fsd34olk03",
         "label": "отзывы",
-        "link": "reviews"
+        "link": "/reviews"
     },
     {
         "id": "89543fsd34olk04",
         "label": "вопросы",
-        "link": "questions"
+        "link": "/questions"
     },
     {
         "id": "89543fsd34olk05",
         "label": "тарифы",
-        "link": "tariffs"
+        "link": "/tariffs"
     },
     {
         "id": "89543fsd34olk06",
         "label": "блог",
-        "link": "blog"
+        "link": "/blog"
     }
 ]

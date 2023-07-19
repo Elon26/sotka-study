@@ -23,7 +23,7 @@ export default function CustomerButtons({ withSign, target }: CustomerButtonsPro
                 />
                 <LinkButton
                     text="Купить курс"
-                    link="store"
+                    link="/store"
                     size={windowWidth >= 768 ? "middle" : "big"}
                     color="gray-dark"
                     border="none"
