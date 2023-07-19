@@ -58,6 +58,11 @@ a {
     padding: 0 20px;
 }
 
+ul,
+ol {
+    list-style-type: none;
+}
+
 .pagewrapper {
     min-height: 100vh;
     display: flex;

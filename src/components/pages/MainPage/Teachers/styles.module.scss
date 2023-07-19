@@ -1,0 +1,77 @@
+@import "../../../../data/variables.scss";
+
+.examAndDisciplineArea {
+    display: flex;
+    align-items: start;
+}
+
+.examArea {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.disciplineArea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 20px;
+    border-left: 1px solid $color-gray-light;
+}
+
+.teacherArea {
+    display: flex;
+    gap: 40px;
+}
+
+.info {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.name {
+    font-size: 38px;
+    font-weight: bold;
+    transform: rotate(-2.5deg);
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.advantage {
+    position: relative;
+    font-size: 20px;
+    padding-left: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -25%);
+        width: 7.5px;
+        height: 7.5px;
+        background-color: $color-gray-light;
+        border-radius: 50%;
+    }
+}
+
+.expert {
+    &::before {
+        background-color: $color-blue;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.photo {
+    flex: 1 1 auto;
+}

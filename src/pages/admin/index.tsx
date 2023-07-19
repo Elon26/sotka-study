@@ -1,8 +1,9 @@
 import Head from "next/head";
 import styles from "./styles.module.scss";
 import { githubHomePageUrl } from "../../data/contants.json";
+import Backup from "@/components/pages/AdminPage/Backup/Backup";
 
-export default function Comment(): React.ReactElement {
+export default function AdminPage(): React.ReactElement {
 
     return (
         <>
@@ -14,6 +15,7 @@ export default function Comment(): React.ReactElement {
             </Head>
             <main>
                 Страница администратора
+                <Backup />
             </main>
         </>
     );

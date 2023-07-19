@@ -1,3 +1,21 @@
 {
-    "githubHomePageUrl": "https://elon26.github.io/sotka-study/"
+    "githubHomePageUrl": "https://elon26.github.io/sotka-study/",
+    "firebaseUrl": "https://sotka-study-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "exams": [
+        "егэ",
+        "огэ"
+    ],
+    "disciplines": [
+        "english",
+        "biology",
+        "physics",
+        "chemistry",
+        "history",
+        "informatics",
+        "literature",
+        "mathematics",
+        "social",
+        "russian",
+        "geography"
+    ]
 }

@@ -1,0 +1,19 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 12px;
+    border: 2px solid $color-gray-light;
+    background-color: $color-white;
+    transition: background-color 0.3s ease 0s;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-white-hover;
+        }
+    }
+}

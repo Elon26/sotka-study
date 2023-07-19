@@ -4,7 +4,7 @@ import LinkButton from "@/components/common/LinkButton/LinkButton";
 import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
 import { githubHomePageUrl } from "../../data/contants.json";
 
-export default function Comment(): React.ReactElement {
+export default function PageNotFound(): React.ReactElement {
     return (
         <>
             <Head>
@@ -25,7 +25,6 @@ export default function Comment(): React.ReactElement {
                             size="middle"
                             color="blue"
                             border="none"
-                            withIcon={false}
                         />
                     </div>
                 </div>

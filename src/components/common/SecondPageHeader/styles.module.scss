@@ -1,4 +1,11 @@
+@import "../../../data/variables.scss";
+
 .wrapper {
+    padding: 0 20px;
     font-size: 36px;
     text-align: center;
+
+    @media (max-width: $md2) {
+        font-size: 28px;
+    }
 }

@@ -5,10 +5,10 @@ import { BsBoxArrowInRight } from "react-icons/bs";
 interface LinkButtonProps {
     text: string
     link: string
-    size: "mini" | "small" | "middle" | "big"
-    color: "blue" | "purple" | "gray-dark" | "transparent"
+    size: "mini" | "small" | "middle" | "big" | "custom"
+    color: "blue" | "purple" | "gray-dark" | "transparent" | "black"
     border: "none" | "white"
-    withIcon: boolean
+    withIcon?: boolean
 }
 
 export default function LinkButton({ text, link, size, color, border, withIcon }: LinkButtonProps): React.ReactElement {
@@ -21,13 +21,15 @@ export default function LinkButton({ text, link, size, color, border, withIcon }
                 ${size === "small" && styles.small}
                 ${size === "middle" && styles.middle}
                 ${size === "big" && styles.big}
+                ${size === "custom" && styles.custom}
                 ${color === "blue" && styles.blue}
                 ${color === "purple" && styles.purple}
                 ${color === "gray-dark" && styles.grayDark}
+                ${color === "black" && styles.black}
                 ${border === "white" && styles.whiteBorder}
                 ${withIcon && styles.withIcon}
                 `}>
-            {link === "login" && <BsBoxArrowInRight />}
+            {withIcon && link === "login" && <BsBoxArrowInRight />}
             <span>{text}</span>
         </Link>
     );

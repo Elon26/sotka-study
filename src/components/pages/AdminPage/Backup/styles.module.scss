@@ -1,0 +1,40 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    width: 400px;
+    margin: 0px auto;
+    border: 3px solid #111111;
+    padding: 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #044b65;
+
+    @media (max-width: $md4) {
+        width: 280px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul {
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-size: 16px;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+}

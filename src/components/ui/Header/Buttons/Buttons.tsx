@@ -23,7 +23,6 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
                     size="small"
                     color="blue"
                     border="none"
-                    withIcon={false}
                 />
             </>)
             }
@@ -42,7 +41,6 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
                     size="big"
                     color="blue"
                     border="none"
-                    withIcon={false}
                 />
             </>)
             }

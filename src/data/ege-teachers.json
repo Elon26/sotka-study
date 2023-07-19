@@ -1,0 +1,274 @@
+[
+    {
+        "id": "82143cis11ohk01",
+        "discipline": "english",
+        "name": "Айзиля Мусина",
+        "greeting": "Hey, guys! Ученики зовут меня Айзи, зови и ты. Я научу тебя не только решать ЕГЭ по английскому, но и говорить, любить и просто жить по-английски.",
+        "experience": 8,
+        "advantages": [
+            "ездила в Америку по студенческой программе на 3.5 месяца",
+            "3 красных диплома о высшем образовании",
+            "пересдала ЕГЭ на 97 баллов в 2021"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/eng100ege",
+        "youtube": "https://www.youtube.com/@eng100ege",
+        "telegram": "https://t.me/eng100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fenglish_ege.webp?alt=media&token=de62b4f7-c4b6-438f-9d8a-32d7b35f996b",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fenglish_ege-short.webp?alt=media&token=7cc669f0-9fb1-43e9-a165-0fa9206cb85e",
+        "totalStudents": 3879,
+        "excellentStudents": 934,
+        "perfectStudents": 3,
+        "relatedDisciplines": [
+            "russian",
+            "literature",
+            "social",
+            "history"
+        ]
+    },
+    {
+        "id": "82143cis11ohk03",
+        "discipline": "biology",
+        "name": "Альбина Амирова",
+        "greeting": "Я — Амирова Альбина. И я здесь, чтобы научить тебя биологии. Считаю, что уроки — это вам не скучная зубрежка, а у биологов тоже есть чувство юмора.",
+        "experience": 6,
+        "advantages": [
+            "сдала ЕГЭ по биологии на 98 баллов",
+            "окончила Казанский ГМУ, врач-биохимик",
+            "победитель и призёр городского и регионального этапов Всероссийской олимпиады школьников по биологии и экологии"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/bio100ege",
+        "youtube": "https://youtube.com/@bio100ege",
+        "telegram": "https://t.me/bio100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fbiology_ege.webp?alt=media&token=2ad13875-d6e2-41ea-b561-31fcd56a3948",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fbiology_ege-short.webp?alt=media&token=f38c724b-258c-4e11-96bc-5d268428a731",
+        "totalStudents": 12838,
+        "excellentStudents": 691,
+        "perfectStudents": 16,
+        "relatedDisciplines": [
+            "russian",
+            "mathematics",
+            "chemistry"
+        ]
+    },
+    {
+        "id": "82143cis11ohk05",
+        "discipline": "physics",
+        "name": "Тимур Нейман",
+        "greeting": "Хэлло, май диар френд! Нет, это не препод по английскому, это Тимур пересмотрел видосиков с собачками. Да, находить физику в мемных видосиках — это мой метод!",
+        "experience": 6,
+        "advantages": [
+            "сдал ЕГЭ по физике на 97 баллов",
+            "магистр по направлению 'Строительство уникальных зданий и сооружений' в СПбПУ",
+            "призер региональных этапов олимпиад по физике"
+        ],
+        "isExpert": false,
+        "vk": "https://vk.com/fiz100ege",
+        "youtube": "https://www.youtube.com/@fiz100ege",
+        "telegram": "https://t.me/fiz100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fphysics_ege.webp?alt=media&token=866250f5-729b-4460-9340-294dd5996386",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fphysics_ege-short.webp?alt=media&token=729aea8f-d692-4f17-bb04-4e922e54ec8c",
+        "totalStudents": 1709,
+        "excellentStudents": 128,
+        "perfectStudents": 4,
+        "relatedDisciplines": [
+            "russian",
+            "informatics",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk07",
+        "discipline": "chemistry",
+        "name": "Юлия Вишневская",
+        "greeting": "Начнем со знакомства, меня зовут Юля, и я химик до мозга костей. В свое время мне казалось, что химбио совсем не для меня, но сейчас я точно знаю, как сдать химию.",
+        "experience": 6,
+        "advantages": [
+            "дважды получила 100 баллов по химии",
+            "выпускница КФУ (бюджет)",
+            "дипломированный химик и преподаватель химии"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/egehim100",
+        "youtube": "https://youtube.com/@chem100ege",
+        "telegram": "https://t.me/egehim100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fchemistry_ege.webp?alt=media&token=33e9d524-80f9-4400-80dc-d604bf76e56b",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fchemistry_ege-short.webp?alt=media&token=68e4c367-5d40-4a29-b86b-98bcae7924be",
+        "totalStudents": 8394,
+        "excellentStudents": 1104,
+        "perfectStudents": 144,
+        "relatedDisciplines": [
+            "russian",
+            "biology",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk09",
+        "discipline": "history",
+        "name": "Диана Асадова",
+        "greeting": "Привет! Меня зовут Диана Асадова, и я — твой проводник в прекрасный мир истории. Профессионально конвертирую мемы про Петра III в баллы на ЕГЭ.",
+        "experience": 5,
+        "advantages": [
+            "сдала ЕГЭ по истории на 96 баллов",
+            "отучилась в КФУ на бюджетной основе и имею высшее педагогическое образование",
+            "участник многочисленных научных конференций, имею публикацию в научных изданиях"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/his100ege",
+        "youtube": "https://www.youtube.com/@his100ege",
+        "telegram": "https://t.me/his100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fhistory_ege.webp?alt=media&token=fd35511b-4244-44c6-a6d5-e0b9d9fc6048",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fhistory_ege-short.webp?alt=media&token=fe583bce-ef78-414f-bce2-0a1217bce3a1",
+        "totalStudents": 2191,
+        "excellentStudents": 245,
+        "perfectStudents": 9,
+        "relatedDisciplines": [
+            "russian",
+            "literature",
+            "social",
+            "english"
+        ]
+    },
+    {
+        "id": "82143cis11ohk11",
+        "discipline": "informatics",
+        "name": "Камиль Шакиров",
+        "greeting": "Привет, дружище! Меня зовут Камиль, и я люблю кошек. А еще так же, как кошек, я люблю точные науки. И если ты не шаришь за эти наши компуктеры, я это исправлю!",
+        "experience": 4,
+        "advantages": [
+            "сдал ЕГЭ по информатике на 100 баллов",
+            "в 2019-2020 году преподавал в США и Китае",
+            "призер и победитель всероссийских и международных олимпиад по информатике и лингвистике"
+        ],
+        "isExpert": false,
+        "vk": "https://vk.com/informege100",
+        "youtube": "https://youtube.com/@inform100ege",
+        "telegram": "https://t.me/informege100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fcomputer_ege.webp?alt=media&token=a80e35ab-c022-4f44-bd88-d6c0cc1d2d22",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fcomputer-short.webp?alt=media&token=8ecba73b-93f9-48c9-a8c1-b8d5a74527a0",
+        "totalStudents": 437,
+        "excellentStudents": 155,
+        "perfectStudents": 12,
+        "relatedDisciplines": [
+            "russian",
+            "physics",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk13",
+        "discipline": "literature",
+        "name": "Лилия Булгарина",
+        "greeting": "Меня зовут Лилия Булгарина, и я обожаю литературу! Это логично, ведь уже много лет она является неотъемлемой частью моей жизни.",
+        "experience": 6,
+        "advantages": [
+            "сдала егэ по литературе на 96 баллов",
+            "многократный победитель и призёр олимпиад по литературе и мировой художественной культуре",
+            "дважды окончила курсы ФИПИ по подготовке экспертов ЕГЭ по литературе"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/liter100ege",
+        "youtube": "https://www.youtube.com/@liter100ege",
+        "telegram": "https://t.me/liter100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fliterature_ege.webp?alt=media&token=382dcb8f-57cd-4f0f-a1fa-627f7a997c54",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fliterature_ege-short.webp?alt=media&token=37e83b05-c30d-46e7-b04f-2fe4628ab516",
+        "totalStudents": 7125,
+        "excellentStudents": 2569,
+        "perfectStudents": 215,
+        "relatedDisciplines": [
+            "russian",
+            "history",
+            "english"
+        ]
+    },
+    {
+        "id": "82143cis11ohk15",
+        "discipline": "mathematics",
+        "name": "Александр Нестеров",
+        "greeting": "Привет! Меня зовут Александр Нестеров, и я здесь, чтобы поднять твой результат до 90+ баллов на ЕГЭ по профильной математике (даже с 30).",
+        "experience": 10,
+        "advantages": [
+            "сдал ЕГЭ по профильной математике на 99 баллов",
+            "выпускник физмат лицея 131, выпускник факультета вычислительной математики и кибернетики КФУ",
+            "дипломированный учитель математики"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/mathege100",
+        "youtube": "https://www.youtube.com/@matprofil100",
+        "telegram": "https://t.me/sotkamathege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fmathematics_ege.webp?alt=media&token=f2f01764-dbbd-4ce1-af08-3b54466014d6",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fmathematics_ege-short.webp?alt=media&token=12f1e0d4-1b52-40f4-bb02-66385c175406",
+        "totalStudents": 4762,
+        "excellentStudents": 498,
+        "perfectStudents": 4,
+        "relatedDisciplines": [
+            "russian",
+            "informatics",
+            "chemistry",
+            "english",
+            "social",
+            "physics",
+            "biology"
+        ]
+    },
+    {
+        "id": "82143cis11ohk17",
+        "discipline": "social",
+        "name": "Алексей Кулагин",
+        "greeting": "Я — Алексей, я бородат и весел. А еще я гуманитарий до мозга костей. Дипломированный, на минуточку, гуманитарий.",
+        "experience": 10,
+        "advantages": [
+            "дважды сдал ЕГЭ на 98 баллов",
+            "окончил аспирантуру К(П)ФУ",
+            "лучший учитель Казани — 2021"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/egeobsh100",
+        "youtube": "https://youtube.com/@obsh100ege",
+        "telegram": "https://t.me/egeobsh100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fsocial_ege.webp?alt=media&token=68996ec9-1693-4388-a82b-9aea773b4e6c",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fsocial_ege-short.webp?alt=media&token=515d115c-6808-4c2f-a0fd-8dd2e1fdf7b9",
+        "totalStudents": 6324,
+        "excellentStudents": 1124,
+        "perfectStudents": 13,
+        "relatedDisciplines": [
+            "russian",
+            "history",
+            "english",
+            "literature"
+        ]
+    },
+    {
+        "id": "82143cis11ohk19",
+        "discipline": "russian",
+        "name": "Тамара Ларина",
+        "greeting": "Меня зовут Тамара Ларина, и моя миссия — подготовить тебя к ЕГЭ по русскому языку на высокие баллы!",
+        "experience": 7,
+        "advantages": [
+            "дважды сдала ЕГЭ на 100 баллов",
+            "дипломированный филолог (красный диплом КФУ)",
+            "победитель и призер многих муниципальных и региональных олимпиад"
+        ],
+        "isExpert": true,
+        "vk": "https://vk.com/rusege100",
+        "youtube": "https://www.youtube.com/@rus100ege",
+        "telegram": "https://t.me/rus100ege",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Frussian_ege.webp?alt=media&token=5c234dad-648f-4480-907b-10041b9b4691",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Frussian_ege-short.webp?alt=media&token=2c903e23-0e6d-46a2-a7e6-0bfe8f78e727",
+        "totalStudents": 12207,
+        "excellentStudents": 3910,
+        "perfectStudents": 103,
+        "relatedDisciplines": [
+            "informatics",
+            "chemistry",
+            "english",
+            "social",
+            "physics",
+            "biology",
+            "literature",
+            "mathematics"
+        ]
+    }
+]

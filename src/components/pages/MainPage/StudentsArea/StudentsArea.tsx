@@ -6,6 +6,9 @@ import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
 import GiftPicture from "../GiftPicture/GiftPicture";
 import Statistic from "../Statistic/Statistic";
 import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
+import Shapes from "../Shapes/Shapes";
+import PageArea from "@/components/common/PageArea/PageArea";
+import Teachers from "../Teachers/Teachers";
 
 export default function StudentsArea(): React.ReactElement {
     return (
@@ -44,6 +47,28 @@ export default function StudentsArea(): React.ReactElement {
             <WhiteSpace
                 size="middle"
             />
+            <Shapes />
+            <WhiteSpace
+                size="middle"
+            />
+            <CustomerButtons
+                withSign={false}
+                target="students"
+            />
+            <WhiteSpace
+                size="middle"
+            />
+            <PageArea>
+                <>
+                    <SecondPageHeader
+                        firstLine="Преподаватели, с которыми тебе будет интересно"
+                    />
+                    <WhiteSpace
+                        size="middle"
+                    />
+                    <Teachers />
+                </>
+            </PageArea>
         </>
     );
 }

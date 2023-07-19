@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import { githubHomePageUrl } from "../../data/contants.json";
 
-export default function Comment(): React.ReactElement {
+export default function BlogPage(): React.ReactElement {
 
     return (
         <>

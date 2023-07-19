@@ -1,0 +1,215 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    position: relative;
+    height: 500px;
+
+    @media (max-width: $md1) {
+        height: 350px;
+    }
+
+    @media (max-width: $md4) {
+        width: 400px;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $md5) {
+        width: 300px;
+    }
+
+    @media (max-width: $md5) {
+        height: 550px;
+    }
+}
+
+.shape {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 50px;
+
+    & .image {
+        position: absolute;
+    }
+
+    @media (max-width: $md1) {
+        padding: 0 25px;
+        font-size: 24px;
+    }
+
+    @media (max-width: $md5) {
+        font-size: 18px;
+    }
+}
+
+.firstShape {
+    top: 100px;
+    left: 0;
+    width: 380px;
+    height: 380px;
+    background-color: $color-white;
+    border-radius: 50%;
+    color: $color-black;
+    z-index: 3;
+
+    & .image {
+        top: 0;
+        left: 0;
+    }
+
+    @media (max-width: $md1) {
+        width: 245px;
+        height: 245px;
+    }
+
+    @media (max-width: $md4) {
+        top: 0;
+        left: 0;
+        transform: rotate(10deg);
+
+        & .image {
+            top: 0;
+            left: auto;
+            right: 0;
+            transform: rotate(90deg);
+        }
+    }
+
+    @media (max-width: $md5) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.secondShape {
+    top: 80px;
+    left: 27%;
+    width: 380px;
+    height: 380px;
+    background-color: $color-black;
+    border: 2px solid $color-white;
+    transform: rotate(-10deg);
+    z-index: 4;
+
+    & .image {
+        color: $color-blue;
+        transform: rotate(7deg);
+        bottom: -9px;
+        right: -40px;
+    }
+
+    @media (max-width: $md1) {
+        width: 245px;
+        height: 245px;
+
+        & .image {
+            right: -30px;
+        }
+    }
+
+    @media (max-width: $md4) {
+        top: 180px;
+        right: 0;
+    }
+
+    @media (max-width: $md5) {
+        top: 150px;
+        width: 170px;
+        height: 170px;
+
+        & .image {
+            bottom: -5px;
+            width: 60%;
+            height: 60%;
+        }
+    }
+}
+
+.thirdShape {
+    top: 0;
+    left: 55%;
+    width: 250px;
+    height: 250px;
+    background-color: $color-black-lighten;
+    border-radius: 50%;
+    z-index: 5;
+
+    @media (max-width: $md1) {
+        left: 53.5%;
+        width: 180px;
+        height: 180px;
+    }
+
+    @media (max-width: $md4) {
+        top: 350px;
+        left: 0;
+    }
+
+    @media (max-width: $md5) {
+        top: 280px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.fourthShape {
+    z-index: 4;
+    top: 100px;
+    left: 70%;
+    width: 355px;
+    height: 355px;
+    background-color: $color-purple;
+    border-radius: 50%;
+
+    & .image {
+        top: 0;
+        right: 0;
+    }
+
+    @media (max-width: $md1) {
+        width: 240px;
+        height: 240px;
+    }
+
+    @media (max-width: $md4) {
+        top: 450px;
+        left: 30%;
+    }
+
+    @media (max-width: $md5) {
+        top: 350px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.effects {
+    span {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: $color-white;
+
+        &:nth-child(1) {
+            top: -6px;
+            left: -6px;
+        }
+        &:nth-child(2) {
+            top: -6px;
+            right: -6px;
+        }
+        &:nth-child(3) {
+            bottom: -6px;
+            left: -6px;
+        }
+        &:nth-child(4) {
+            bottom: -6px;
+            right: -6px;
+        }
+    }
+}

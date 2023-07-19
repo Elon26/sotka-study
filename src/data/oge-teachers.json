@@ -1,0 +1,258 @@
+[
+    {
+        "id": "82143cis11ohk02",
+        "discipline": "english",
+        "name": "Анна Мёрфи",
+        "greeting": "Привет. Меня зовут Анна Мёрфи, и в душе я тот ещё инглишмен! Я очень люблю культуру англоязычных стран и сам язык, именно поэтому хочу познакомить тебя с прекрасным миром английского!",
+        "experience": 4,
+        "advantages": [
+            "сдала ЕГЭ по английскому языку на 90 баллов",
+            "дипломированный переводчик с немецкого и английского языков",
+            "сдала IELTS на 7.5",
+            "призер Всероссийской олимпиады по английскому языку"
+        ],
+        "vk": "https://vk.com/engoge100",
+        "youtube": "https://t.me/ogeenglish100",
+        "telegram": "https://youtube.com/@eng100oge",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fenglish_oge.webp?alt=media&token=3d563089-ed6b-49d2-ac05-abc821043a3f",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fenglish_oge-short.webp?alt=media&token=4d0c3e5f-539b-43ad-8a38-926bfc763a13",
+        "relatedDisciplines": [
+            "russian",
+            "literature",
+            "social",
+            "history"
+        ]
+    },
+    {
+        "id": "82143cis11ohk04",
+        "discipline": "biology",
+        "name": "Алина Флеминг",
+        "greeting": "Приветик! Меня зовут Алина (чит.: биологиня). Однажды в школе я влюбилась. И эта любовь (чит.: химический процесс) открыла мне маленькую дверь в большой мир.",
+        "experience": 6,
+        "advantages": [
+            "сдала ЕГЭ по биологии на 93 балла",
+            "отучилась в медицинском на бюджете и закончила его с красным дипломом",
+            "была наставником в проекте 'Сириус.Лето'"
+        ],
+        "vk": "https://vk.com/bio100oge",
+        "youtube": "https://t.me/ogebio100",
+        "telegram": "https://youtube.com/@bio100oge",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fbiology_oge.webp?alt=media&token=81624be7-238b-458c-bec4-c94ec09fe105",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fbiology_oge-short.webp?alt=media&token=aab8a35b-5fa2-4a6c-b42e-ae689dd6031f",
+        "relatedDisciplines": [
+            "russian",
+            "mathematics",
+            "chemistry"
+        ]
+    },
+    {
+        "id": "82143cis11ohk06",
+        "discipline": "physics",
+        "name": "Тимур Нейман",
+        "greeting": "Хэлло, май диар френд! Нет, это не препод по английскому, это Тимур пересмотрел видосиков с собачками. Да, находить физику в мемных видосиках — это мой метод!",
+        "experience": 6,
+        "advantages": [
+            "сдал ЕГЭ по физике на 97 баллов",
+            "магистр по направлению 'Строительство уникальных зданий и сооружений' в СПбПУ",
+            "призер региональных этапов олимпиад по физике"
+        ],
+        "vk": "https://vk.com/fizoge100",
+        "youtube": "https://youtube.com/@fiz100oge",
+        "telegram": "https://t.me/ogefizika100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fphysics_ege.webp?alt=media&token=866250f5-729b-4460-9340-294dd5996386",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fphysics_ege-short.webp?alt=media&token=729aea8f-d692-4f17-bb04-4e922e54ec8c",
+        "relatedDisciplines": [
+            "russian",
+            "informatics",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk08",
+        "discipline": "chemistry",
+        "name": "Алина Нобель",
+        "greeting": "Привет! Меня зовут Алина, и уже третий год я показываю другим, что химия проста и прекрасна.",
+        "experience": 2,
+        "advantages": [
+            "сдала ЕГЭ по химии на 93 балла и поступила на бюджет",
+            "призер заключительного этапа олимпиады КФУ и других вузовских олимпиад",
+            "принимала участие в различных естественно-научных конференциях"
+        ],
+        "vk": "https://vk.com/ogehim100",
+        "youtube": "https://t.me/ogechemistry100",
+        "telegram": "https://www.youtube.com/channel/UCPwUUjyaDM9EM5VYtz0K8PA",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fchemistry_oge.webp?alt=media&token=f38d7bf4-32c3-4a09-83af-ba5cdafbea19",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fchemistry_oge-short.webp?alt=media&token=a716f80a-90a7-46c3-aa0b-361d50ecb0f0",
+        "relatedDisciplines": [
+            "russian",
+            "biology",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk10",
+        "discipline": "history",
+        "name": "Ольга Троцкая",
+        "greeting": "Привет, на связи Оля! И я надеюсь, что скоро эти слова станут для тебя позывным — время с кайфом учить историю.",
+        "experience": 2,
+        "advantages": [
+            "сдала ЕГЭ по истории на 93 балла",
+            "закончила школу с золотой медалью, поступила на бюджет в КФУ по направлению 'Культурология'",
+            "100% моих учеников поступили в высшие учебные заведения страны"
+        ],
+        "vk": "https://vk.com/historyoge100",
+        "youtube": "https://youtube.com/@his100oge",
+        "telegram": "https://t.me/ogehis100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fhistory_oge.webp?alt=media&token=eede1770-80a1-4835-beb9-a3258f0136b3",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fhistory_oge-short.webp?alt=media&token=bdcde469-f4b2-45c3-9e14-50dcd520ec5f",
+        "relatedDisciplines": [
+            "russian",
+            "literature",
+            "social",
+            "english"
+        ]
+    },
+    {
+        "id": "82143cis11ohk12",
+        "discipline": "informatics",
+        "name": "Камиль Шакиров",
+        "greeting": "Привет, дружище! Меня зовут Камиль, и я люблю кошек. А еще так же, как кошек, я люблю точные науки. И если ты не шаришь за эти наши компуктеры, я это исправлю!",
+        "experience": 4,
+        "advantages": [
+            "сдал ЕГЭ по информатике на 100 баллов",
+            "в 2019-2020 году преподавал в США и Китае",
+            "призер и победитель всероссийских и международных олимпиад по информатике и лингвистике"
+        ],
+        "vk": "https://vk.com/infa_oge_100",
+        "youtube": "https://youtube.com/@inf100oge",
+        "telegram": "https://t.me/infogesotka",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fcomputer_ege.webp?alt=media&token=a80e35ab-c022-4f44-bd88-d6c0cc1d2d22",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fcomputer-short.webp?alt=media&token=8ecba73b-93f9-48c9-a8c1-b8d5a74527a0",
+        "relatedDisciplines": [
+            "russian",
+            "physics",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk14",
+        "discipline": "literature",
+        "name": "Елизавета Комиссарова",
+        "greeting": "Друзья, всем привет! Меня зовут Лиза, я очень люблю читать и знаю, как заставить тебя встать с кровати и взять с полки книгу (даже если это русская классика).",
+        "experience": 3,
+        "advantages": [
+            "сдала ЕГЭ по литературе на 100 баллов",
+            "призер перечневых олимпиад по литературе и журналистике",
+            "поступила на бюджет журфака МГУ"
+        ],
+        "vk": "https://vk.com/litoge100",
+        "youtube": "https://youtube.com/@liter100oge",
+        "telegram": "https://t.me/ogelit100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fliterature_oge.webp?alt=media&token=e3286f46-555f-4d78-8cfd-af3b2def173a",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fliterature_oge-short.webp?alt=media&token=39976f2e-96d8-47a3-a4c7-41dfec3e9a00",
+        "relatedDisciplines": [
+            "russian",
+            "history",
+            "english"
+        ]
+    },
+    {
+        "id": "82143cis11ohk16",
+        "discipline": "mathematics",
+        "name": "Мария Стрельцова",
+        "greeting": "Меня зовут Мария, и я покажу тебе, что математика — это не сложная бяка, а интересная и понятная наука.",
+        "experience": 10,
+        "advantages": [
+            "сдала ОГЭ на максимальный балл и закончила школу с золотой медалью",
+            "закончила университет с красным дипломом",
+            "призер олимпиады по математике"
+        ],
+        "vk": "https://vk.com/matoge100",
+        "youtube": "https://www.youtube.com/@matem100oge",
+        "telegram": "https://t.me/ogemath100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fmathematics_oge.webp?alt=media&token=ba24c39c-ddfb-4c92-b19f-da9ff23bf7a9",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fmathematics_oge-short.webp?alt=media&token=95a003f6-343c-4092-ab02-8d1a285ef814",
+        "relatedDisciplines": [
+            "russian",
+            "informatics",
+            "chemistry",
+            "english",
+            "social",
+            "physics",
+            "biology"
+        ]
+    },
+    {
+        "id": "82143cis11ohk18",
+        "discipline": "social",
+        "name": "Зоя Титова",
+        "greeting": "Привет, обществоведы! Меня зовут Зоя, и на философском факультете СПбГУ я узнала золотое правило этики: в любой непонятной ситуации учи обществознание.",
+        "experience": 4,
+        "advantages": [
+            "сдала ЕГЭ по обществознанию на 100 баллов",
+            "поступила на бюджет в СПбГУ на факультет философии и этики",
+            "призёр Всероссийской олимпиады школьников"
+        ],
+        "vk": "https://vk.com/obshoge100",
+        "youtube": "https://www.youtube.com/@obsh100oge",
+        "telegram": "https://t.me/ogeobsh100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fsocial_oge.webp?alt=media&token=6fa4867a-caf2-4bea-9f14-c520109f2246",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fsocial_oge-short.webp?alt=media&token=71def458-7fda-418c-b0d2-0d2a8f339b37",
+        "relatedDisciplines": [
+            "russian",
+            "history",
+            "english",
+            "literature"
+        ]
+    },
+    {
+        "id": "82143cis11ohk20",
+        "discipline": "russian",
+        "name": "Дарья Устинова",
+        "greeting": "Я Даша. Всей душой обожаю русский, живу моментом и открываю для тебя язык с новых сторон.",
+        "experience": 2,
+        "advantages": [
+            "дважды сдала ЕГЭ на 94 баллов",
+            "поступила на бюджет в КФУ",
+            "призер областной олимпиады по литературе и русскому языку"
+        ],
+        "vk": "https://vk.com/ogerus100",
+        "youtube": "https://www.youtube.com/@rus100oge",
+        "telegram": "https://t.me/ogeruss100",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Frussian_oge.webp?alt=media&token=0dae005a-165b-4600-92e0-64aea1c1f0e1",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Frussian_oge-short.webp?alt=media&token=70b897da-b94f-4dd7-aaf7-1da91477ffde",
+        "relatedDisciplines": [
+            "informatics",
+            "chemistry",
+            "english",
+            "social",
+            "physics",
+            "biology",
+            "literature",
+            "geography",
+            "mathematics"
+        ]
+    },
+    {
+        "id": "82143cis11ohk21",
+        "discipline": "geography",
+        "name": "Егатерина Атласова",
+        "greeting": "Привет! Меня зовут Катя, и вместе мы изучим целый мир, после чего ты сможешь взглянуть на него другими глазами.",
+        "experience": 3,
+        "advantages": [
+            "сдала ЕГЭ по географии на 100 баллов",
+            "участница множества научных конференций (МГУ, СПбГУ)",
+            "написала грантовый проект, который стал лучшим в Татарстане"
+        ],
+        "vk": "https://vk.com/geo_sotka_oge",
+        "youtube": "https://youtube.com/@geo100oge",
+        "telegram": "https://t.me/geoogesotka",
+        "photoMain": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fgeography_oge.webp?alt=media&token=f7ba7507-7bae-479f-97e1-cd5363095d3b",
+        "photoShort": "https://firebasestorage.googleapis.com/v0/b/sotka-study.appspot.com/o/teachersPhoto%2Fgeography_oge-short.webp?alt=media&token=21a44670-e8ce-41db-bbc6-d50f29bf8ba8",
+        "relatedDisciplines": [
+            "russian",
+            "informatics",
+            "chemistry"
+        ]
+    }
+]

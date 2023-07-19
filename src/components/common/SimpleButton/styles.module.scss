@@ -1,0 +1,30 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.gray {
+    background-color: $color-gray-light;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-gray-light-hover;
+        }
+    }
+}
+
+.black {
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.red {
+    background-color: $color-red;
+    color: $color-white;
+}

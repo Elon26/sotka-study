@@ -20,7 +20,6 @@ export default function CustomerButtons({ withSign, target }: CustomerButtonsPro
                     size={windowWidth >= 768 ? "middle" : "big"}
                     color="purple"
                     border="none"
-                    withIcon={false}
                 />
                 <LinkButton
                     text="Купить курс"
@@ -28,10 +27,8 @@ export default function CustomerButtons({ withSign, target }: CustomerButtonsPro
                     size={windowWidth >= 768 ? "middle" : "big"}
                     color="gray-dark"
                     border="none"
-                    withIcon={false}
                 />
-                {target === "students" && withSign && <StudentsSign />
-                }
+                {target === "students" && withSign && <StudentsSign />}
             </div>
         </div>
     );

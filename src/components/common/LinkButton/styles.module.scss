@@ -40,6 +40,11 @@
     }
 }
 
+.custom {
+    height: 55px;
+    padding: 0 20px;
+}
+
 .blue {
     background-color: $color-blue;
 
@@ -66,6 +71,17 @@
     @media (hover: hover) {
         &:hover {
             background-color: $color-gray-dark-hover;
+        }
+    }
+}
+
+.black {
+    background-color: $color-black;
+    color: $color-white;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-black-hover;
         }
     }
 }
