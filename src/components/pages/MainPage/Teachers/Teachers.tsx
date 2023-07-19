@@ -11,6 +11,7 @@ import TeacherArea from "./TeacherArea";
 export default function Teachers(): React.ReactElement {
     const egeTeachers = useAppSelector(getEgeTeachersList());
     const ogeTeachers = useAppSelector(getOgeTeachersList());
+    const allTeachers = [...egeTeachers, ...ogeTeachers];
     const egeDisciplines = useAppSelector(getEgeDisciplines());
     const ogeDisciplines = useAppSelector(getOgeDisciplines());
 
@@ -45,6 +46,8 @@ export default function Teachers(): React.ReactElement {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedExam, selectedEgeDiscipline, selectedOgeDiscipline]);
 
+    console.log(allTeachers);
+
     return (
         <>
             <div
@@ -57,20 +60,26 @@ export default function Teachers(): React.ReactElement {
                     selectedDiscipline={selectedExam === "егэ" ? selectedEgeDiscipline : selectedOgeDiscipline}
                 />
             </div>
-            <TeacherArea
-                name={selectedTeacher.name}
-                experience={selectedTeacher.experience}
-                advantages={selectedTeacher.advantages}
-                perfectStudents={selectedTeacher.perfectStudents}
-                excellentStudents={selectedTeacher.excellentStudents}
-                isExpert={selectedTeacher.isExpert}
-                photo={selectedTeacher.photoMain}
-                discipline={selectedTeacher.discipline}
-                isOge={selectedExam === "огэ"}
-                vkLink={selectedTeacher.vk}
-                youtubeLink={selectedTeacher.youtube}
-                telegramLink={selectedTeacher.telegram}
-            />
+            <div className={styles.teachersArea}>
+                {allTeachers.map(teacher => (
+                    <TeacherArea
+                        key={teacher.id}
+                        name={teacher.name}
+                        experience={teacher.experience}
+                        advantages={teacher.advantages}
+                        perfectStudents={teacher.perfectStudents}
+                        excellentStudents={teacher.excellentStudents}
+                        isExpert={teacher.isExpert}
+                        photo={teacher.photoMain}
+                        discipline={teacher.discipline}
+                        isOge={selectedExam === "огэ"}
+                        vkLink={teacher.vk}
+                        youtubeLink={teacher.youtube}
+                        telegramLink={teacher.telegram}
+                        isSelectedTeacher={selectedTeacher.id === teacher.id}
+                    />
+                ))}
+            </div>
         </>
     );
 }

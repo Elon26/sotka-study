@@ -18,6 +18,7 @@ interface TeacherAreaProps {
     vkLink: string
     youtubeLink: string
     telegramLink: string
+    isSelectedTeacher: boolean
 }
 
 export default function TeacherArea({
@@ -32,10 +33,11 @@ export default function TeacherArea({
     isOge,
     vkLink,
     youtubeLink,
-    telegramLink
+    telegramLink,
+    isSelectedTeacher
 }: TeacherAreaProps): React.ReactElement {
     return (
-        <div className={styles.teacherArea}>
+        <div className={`${styles.teacherArea} ${isSelectedTeacher && styles.visibile}`}>
             <div className={styles.info}>
                 <div className={styles.name}>
                     {name}
