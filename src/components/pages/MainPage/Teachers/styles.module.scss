@@ -3,6 +3,15 @@
 .examAndDisciplineArea {
     display: flex;
     align-items: start;
+
+    @media (max-width: $md2) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media (max-width: $md4) {
+        align-items: center;
+    }
 }
 
 .examArea {
@@ -17,11 +26,36 @@
     gap: 10px;
     padding-left: 20px;
     border-left: 1px solid $color-gray-light;
+
+    @media (max-width: $md2) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    @media (max-width: $md4) {
+        justify-content: center;
+    }
 }
 
 .teachersArea {
     position: relative;
     height: 600px;
+
+    @media (max-width: $md2) {
+        height: 450px;
+    }
+
+    @media (max-width: $md3) {
+        height: 375px;
+    }
+
+    @media (max-width: $md4) {
+        height: 700px;
+    }
+
+    @media (max-width: $md5) {
+        height: 780px;
+    }
 }
 
 .teacherArea {
@@ -43,26 +77,52 @@
         opacity: 1;
         visibility: visible;
     }
+
+    @media (max-width: $md4) {
+        flex-direction: column-reverse;
+        gap: 0;
+        margin-top: 20px;
+    }
 }
 
 .info {
-    flex: 1 1 40%;
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+
+    @media (max-width: $md1) {
+        font-size: 14px;
+    }
+
+    @media (max-width: $md4) {
+        flex: 1 1 auto;
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
 }
 
 .name {
     font-size: 38px;
     font-weight: bold;
     transform: rotate(-2.5deg);
+
+    @media (max-width: $md1) {
+        font-size: 28px;
+    }
 }
 
 .advantages {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: $md1) {
+        gap: 10px;
+    }
 }
 
 .advantage {
@@ -80,6 +140,10 @@
         background-color: $color-gray-light;
         border-radius: 50%;
     }
+
+    @media (max-width: $md1) {
+        font-size: 16px;
+    }
 }
 
 .expert {
@@ -91,8 +155,47 @@
 .buttons {
     display: flex;
     gap: 15px;
+
+    @media (max-width: $md1) {
+        gap: 10px;
+    }
+
+    @media (max-width: $md5) {
+        flex-wrap: wrap;
+        justify-content: center;
+        a:first-child {
+            flex: 1 1 100%;
+        }
+    }
 }
 
 .photo {
     flex: 1 1 auto;
+
+    @media (max-width: $md4) {
+        flex: 0 0 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: $md5) {
+        flex: 0 0 250px;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    @media (max-width: $md4) {
+        width: 350px;
+        height: 300px;
+    }
+
+    @media (max-width: $md5) {
+        width: 300px;
+        height: 250px;
+    }
 }

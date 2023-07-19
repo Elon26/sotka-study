@@ -46,8 +46,6 @@ export default function Teachers(): React.ReactElement {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedExam, selectedEgeDiscipline, selectedOgeDiscipline]);
 
-    console.log(allTeachers);
-
     return (
         <>
             <div

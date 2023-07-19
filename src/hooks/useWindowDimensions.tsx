@@ -28,7 +28,7 @@ const WindowDimensionsProvider = ({
     useEffect(() => {
         setwindowWidth(window.innerWidth);
         window.addEventListener("resize", () =>
-            setwindowWidth(window.innerWidth)
+            setwindowWidth(prev => window.innerWidth)
         );
     }, []);
 
