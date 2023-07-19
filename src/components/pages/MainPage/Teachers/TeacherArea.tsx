@@ -82,7 +82,6 @@ export default function TeacherArea({
                     alt="график"
                     width={650}
                     height={600}
-                    priority
                 />
             </div>
         </div >
