@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import egeTeachers from "../data/ege-teachers.json";
 import ogeTeachers from "../data/oge-teachers.json";
 import putItemToFirebase from "@/services/putItemToFirebase";
+import { ITeacher } from "@/data/models";
 
 const useMockData = () => {
     const statusConst = {
@@ -43,11 +44,13 @@ const useMockData = () => {
     async function initialize() {
         try {
             for (const egeTeacher of egeTeachers) {
-                await putItemToFirebase("egeTeacher", egeTeacher);
+                const teacher = egeTeacher as ITeacher;
+                await putItemToFirebase("egeTeacher", teacher);
                 incrementCount();
             }
             for (const ogeTeacher of ogeTeachers) {
-                await putItemToFirebase("ogeTeacher", ogeTeacher);
+                const teacher = ogeTeacher as ITeacher;
+                await putItemToFirebase("ogeTeacher", teacher);
                 incrementCount();
             }
         } catch (error) {
