@@ -1,11 +1,9 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import { githubHomePageUrl } from "../../../../data/contants.json";
-import educationVideoPreview from "public/images/main-page/education_video_preview.webp";
 import platformPreview from "public/images/main-page/platform_preview.webp";
 import face from "public/images/common/face.webp";
-import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
 
 interface EducationBodyProps {
     selectedHeader: number
@@ -92,17 +90,14 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                     </div>
                 </div>
                 <div className={styles.media}>
-                    <div className={styles.video}>
-                        <ReactPlayer
-                            className={styles.youtube}
-                            url={`video/homework_preview.mp4`}
-                            loop={true}
-                            playing={true}
-                            controls={true}
-                            width={"770px"}
-                            height={"470px"}
-                        />
-                    </div>
+                    <ReactPlayer
+                        url={`video/homework_preview.mp4`}
+                        playing={true}
+                        loop={true}
+                        muted={true}
+                        width='770px'
+                        height='470px'
+                    />
                 </div>
             </div>
         </div>
