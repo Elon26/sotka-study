@@ -79,7 +79,7 @@ export default function TeacherArea({
                 <Image
                     className={styles.image}
                     src={photo}
-                    alt="график"
+                    alt="преподаватель"
                     width={650}
                     height={600}
                 />

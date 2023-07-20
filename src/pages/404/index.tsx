@@ -3,8 +3,12 @@ import styles from "./styles.module.scss";
 import LinkButton from "@/components/common/LinkButton/LinkButton";
 import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
 import { githubHomePageUrl } from "../../data/contants.json";
+import { useRouter } from "next/router";
 
 export default function PageNotFound(): React.ReactElement {
+    const router = useRouter();
+    router.push("https://elon26.github.io/sotka-study/" + router.asPath);
+
     return (
         <>
             <Head>
