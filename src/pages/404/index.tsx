@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 
 export default function PageNotFound(): React.ReactElement {
     const router = useRouter();
-    router.push("https://elon26.github.io/sotka-study/" + router.asPath);
+    router.push(githubHomePageUrl + router.asPath);
 
     return (
         <>
