@@ -9,6 +9,7 @@ import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHea
 import Shapes from "../Shapes/Shapes";
 import PageArea from "@/components/common/PageArea/PageArea";
 import Teachers from "../Teachers/Teachers";
+import Education from "../Education/Education";
 
 export default function StudentsArea(): React.ReactElement {
     return (
@@ -61,12 +62,25 @@ export default function StudentsArea(): React.ReactElement {
             <PageArea>
                 <>
                     <SecondPageHeader
-                        firstLine="Преподаватели, с которыми тебе будет интересно"
+                        firstLine="Преподаватели, с которыми"
+                        secondLine="тебе будет интересно"
                     />
                     <WhiteSpace
                         size="middle"
                     />
                     <Teachers />
+                    <WhiteSpace
+                        size="middle"
+                    />
+                    <SecondPageHeader
+                        firstLine="Все, что тебе нужно для подготовки, —"
+                        secondLine="на одной платформе"
+                        secondLineColor="blue"
+                    />
+                    <WhiteSpace
+                        size="middle"
+                    />
+                    <Education />
                 </>
             </PageArea>
         </>
