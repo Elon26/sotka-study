@@ -128,9 +128,7 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                 </div>
                 <div className={styles.media}>
                     <ReactPlayer
-                        url={"/video/homeworkPreview.mp4"}
-                        // url={githubHomePageUrl + "video/homeworkPreview.mp4"}
-                        // <link rel="icon" href={githubHomePageUrl + "favicon.png"} />
+                        url={githubHomePageUrl + "video/homeworkPreview.mp4"}
                         playing={true}
                         loop={true}
                         muted={true}
