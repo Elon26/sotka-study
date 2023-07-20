@@ -2,8 +2,8 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import platformPreview from "public/images/main-page/platform_preview.webp";
 import face from "public/images/common/face.webp";
-import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import { githubHomePageUrl } from "../../../../data/contants.json";
 
 interface EducationBodyProps {
     selectedHeader: number
@@ -91,12 +91,51 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                 </div>
                 <div className={styles.media}>
                     <ReactPlayer
-                        url={`video/homework_preview.mp4`}
+                        url={"video/homeworkPreview.mp4"}
                         playing={true}
                         loop={true}
                         muted={true}
-                        width='770px'
-                        height='470px'
+                        width="770px"
+                        height="470px"
+                    />
+                </div>
+            </div>
+            <div className={`${styles.card} ${selectedHeader === 4 && styles.selectedCard}`}>
+                <div className={styles.description}>
+                    <div className={styles.top}>
+                        <div className={styles.bigText}>
+                            Практикуйся и получай моментальную обратную связь
+                        </div>
+                        <div className={styles.smallText}>
+                            <p className={styles.withDot}>получишь результаты своей домашки уже через <span className={styles.withLine}>15 минут</span></p>
+                            <p className={styles.withDot}>получишь подробный разбор всех своих ошибок</p>
+                        </div>
+                    </div>
+                    <div className={styles.bottom}>
+                        <div className={styles.faceArea}>
+                            <Image
+                                className={styles.faceIcon}
+                                src={face}
+                                alt="лицо"
+                                width={100}
+                                height={100}
+                                placeholder="blur"
+                            />
+                            <div className={styles.faceText}>наставник будет проверять снова и снова, пока задание не будет идеальным</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="18.974" viewBox="0 0 53 19" fill="none" className={styles.faceLine}><path d="M0.903601 18.5082C8.26471 6.30825 28.4233 -9.94675 51.8655 12.8846" stroke="currentColor" stroke-width="1.6"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.media}>
+                    <ReactPlayer
+                        url={"/video/homeworkPreview.mp4"}
+                        // url={githubHomePageUrl + "video/homeworkPreview.mp4"}
+                        // <link rel="icon" href={githubHomePageUrl + "favicon.png"} />
+                        playing={true}
+                        loop={true}
+                        muted={true}
+                        width="770px"
+                        height="470px"
                     />
                 </div>
             </div>
