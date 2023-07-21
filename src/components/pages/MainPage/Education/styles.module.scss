@@ -5,6 +5,10 @@
     justify-content: space-between;
     gap: 80px;
     margin-bottom: 20px;
+
+    @media (max-width: $md1) {
+        gap: 40px;
+    }
 }
 
 .header {
@@ -41,10 +45,18 @@
     transition:
         background-color 0.3s ease 0s,
         color 0.3s ease 0s;
+
+    @media (max-width: $md2) {
+        font-size: 12px;
+    }
 }
 
 .title {
     font-weight: 700;
+
+    @media (max-width: $md2) {
+        font-size: 12px;
+    }
 }
 
 .line {
@@ -61,6 +73,10 @@
     border-radius: 24px;
     padding: 30px;
     overflow: hidden;
+
+    @media (max-width: $md2) {
+        height: 350px;
+    }
 }
 
 .card {
@@ -81,29 +97,52 @@
         opacity: 1;
         visibility: visible;
     }
+
+    @media (max-width: $md2) {
+        gap: 20px;
+    }
 }
 
 .description {
-    flex: 1 1 auto;
+    position: relative;
+    z-index: 2;
+    flex: 0 0 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: $md2) {
+        flex: 0 0 270px;
+    }
 }
 
 .bigText {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
+
+    @media (max-width: $md2) {
+        font-size: 22px;
+    }
 }
 
 .smallText {
     font-size: 26px;
+
+    @media (max-width: $md2) {
+        font-size: 18px;
+    }
 }
 
 .withDot {
     position: relative;
     font-size: 20px;
     padding-left: 30px;
+
+    @media (max-width: $md2) {
+        font-size: 14px;
+        padding-left: 20px;
+    }
 
     &:not(&:last-child) {
         margin-bottom: 10px;
@@ -141,6 +180,12 @@
     align-items: center;
     gap: 15px;
     font-size: 22px;
+
+    @media (max-width: $md2) {
+        width: 160px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
 
 .icon {
@@ -148,17 +193,26 @@
 }
 
 .media {
-    flex: 0 0 770px;
+    flex: 1 1 auto;
 }
 
 .video {
     border-radius: 24px;
     overflow: hidden;
+    background: radial-gradient(#55ddff, #0081b5);
 }
 
-.seconCardImage {
+.secondCardImage {
     max-width: 110%;
     max-height: 110%;
+}
+
+.fourthCardImage {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
 }
 
 .faceArea {
@@ -172,6 +226,173 @@
     position: absolute;
     top: -10px;
     left: 80px;
+    width: 55px;
+    height: 25px;
+    transform: rotate(10deg);
+    color: $color-purple;
+
+    @media (max-width: $md2) {
+        top: -15px;
+        left: 40px;
+        transform: rotate(0deg);
+    }
+}
+
+.faceText {
+    @media (max-width: $md2) {
+        font-size: 12px;
+    }
+}
+
+.cardMobile {
+    border-radius: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.withPadding {
+    padding: 10px 20px;
+}
+
+.grayCardMobile {
+    background-color: $color-gray-light;
+}
+
+.whiteCardMobile {
+    border: 3px solid $color-gray-light;
+}
+
+.withBackground {
+    position: relative;
+    height: 500px;
+
+    @media (max-width: $md5) {
+        height: 300px;
+    }
+}
+
+.blueCardMobile {
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.bigtextMobile {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bigtextMobileFirst {
+    max-width: 360px;
+}
+
+.bigtextMobileSecond {
+    max-width: 260px;
+}
+
+.bigtextMobileThird {
+    max-width: 350px;
+}
+
+.bigtextMobileFourth {
+    max-width: 230px;
+}
+
+.videoMobile {
+    height: 350px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: radial-gradient(#55ddff, #0081b5);
+
+    @media (max-width: $md5) {
+        height: 250px;
+    }
+}
+
+.buttonsMobile {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    @media (max-width: $md5) {
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
+
+.buttonMobile {
+    width: 160px;
+    border: 2px solid $color-gray;
+    padding: 8px 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.iconMobile {
+    color: $color-white;
+}
+
+.secondCardImageMobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+}
+
+.fourthCardImageMobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @media (max-width: $md5) {
+        top: auto;
+        bottom: 0;
+        height: 80%;
+    }
+}
+
+.smallTextMobile {
+    margin-top: 15px;
+    max-width: 300px;
+}
+
+.playerMobileWrapper {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.playerMobile {
+    width: 200%;
+    height: 200%;
+    transform: translate(-25%, -80px);
+}
+
+.faceAreaMobile {
+    margin-top: -80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faceTextMobile {
+    position: relative;
+    flex: 0 1 250px;
+    font-size: 16px;
+}
+
+.faceLineMobile {
+    position: absolute;
+    top: -20px;
+    left: -40px;
     width: 55px;
     height: 25px;
     transform: rotate(10deg);

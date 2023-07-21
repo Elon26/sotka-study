@@ -1,15 +1,19 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import platformPreview from "public/images/main-page/platform_preview.webp";
+import materials from "public/images/main-page/materials.jpg";
 import face from "public/images/common/face.webp";
 import ReactPlayer from "react-player";
 import { githubHomePageUrl } from "../../../../data/contants.json";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 interface EducationBodyProps {
     selectedHeader: number
 }
 
 export default function EducationBody({ selectedHeader }: EducationBodyProps): React.ReactElement {
+    const { windowWidth } = useWindowDimensions();
+
     return (
         <div className={styles.cards}>
             <div className={`${styles.card} ${selectedHeader === 1 && styles.selectedCard}`}>
@@ -54,7 +58,7 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                 </div>
                 <div className={styles.media}>
                     <Image
-                        className={styles.seconCardImage}
+                        className={styles.secondCardImage}
                         src={platformPreview}
                         alt="превью платформ"
                         width={890}
@@ -80,8 +84,8 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                                 className={styles.faceIcon}
                                 src={face}
                                 alt="лицо"
-                                width={100}
-                                height={100}
+                                width={windowWidth >= 1024 ? 100 : 55}
+                                height={windowWidth >= 1024 ? 100 : 55}
                                 placeholder="blur"
                             />
                             <div className={styles.faceText}>наставник будет проверять снова и снова, пока задание не будет идеальным</div>
@@ -95,8 +99,8 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                         playing={true}
                         loop={true}
                         muted={true}
-                        width="770px"
-                        height="470px"
+                        width="100%"
+                        height="100%"
                     />
                 </div>
             </div>
@@ -112,8 +116,15 @@ export default function EducationBody({ selectedHeader }: EducationBodyProps): R
                     </div>
                 </div>
                 <div className={styles.media}>
-
                 </div>
+                <Image
+                    className={styles.fourthCardImage}
+                    src={materials}
+                    alt="материалы"
+                    width={1248}
+                    height={540}
+                    placeholder="blur"
+                />
             </div>
         </div>
     );

@@ -8,6 +8,7 @@ import Burger from "./Burger/Burger";
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import { handleLockBodyScroll } from "@/utils/handleLockBodyScroll";
 import { useRouter } from "next/router";
+import Container from "@/components/common/Container/Container";
 
 export default function Header(): React.ReactElement {
     const { windowWidth } = useWindowDimensions();
@@ -32,7 +33,7 @@ export default function Header(): React.ReactElement {
     return (
         <header>
             <div className={styles.wrapper}>
-                <div className="container">
+                <Container>
                     <div className={styles.body}>
                         <Logo
                             isFull={true}
@@ -50,7 +51,7 @@ export default function Header(): React.ReactElement {
                             />
                         )}
                     </div>
-                </div>
+                </Container>
             </div>
             {windowWidth < 1024 && (
                 <DropdownMenu

@@ -3,12 +3,13 @@ import styles from "./styles.module.scss";
 import cursor from "public/images/main-page/cursor.webp";
 import cylinder from "public/images/main-page/cylinder.webp";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
+import Container from "@/components/common/Container/Container";
 
 export default function Shapes(): React.ReactElement {
     const { windowWidth } = useWindowDimensions();
 
     return (
-        <div className="container">
+        <Container>
             <div className={styles.wrapper}>
                 <div className={`${styles.shape} ${styles.firstShape}`}>
                     <span>Уверен, что учитель в школе готовит неверно?</span>
@@ -46,6 +47,6 @@ export default function Shapes(): React.ReactElement {
                     />
                 </div>
             </div>
-        </div >
+        </Container >
     );
 }

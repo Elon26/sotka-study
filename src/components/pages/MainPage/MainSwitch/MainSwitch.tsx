@@ -1,3 +1,4 @@
+import Container from "@/components/common/Container/Container";
 import styles from "./styles.module.scss";
 
 interface MainSwitchProps {
@@ -19,7 +20,7 @@ export default function MainSwitch({ mainSwitch, changeMainSwitch }: MainSwitchP
     }
 
     return (
-        <div className="container">
+        <Container>
             <div className={styles.wrapper}>
                 <div className={styles.body} onClick={handleClick}>
                     <span className={`${styles.item} ${styles.students}`}>Ученикам</span>
@@ -31,6 +32,6 @@ export default function MainSwitch({ mainSwitch, changeMainSwitch }: MainSwitchP
                 `}></span>
                 </div>
             </div>
-        </div>
+        </Container>
     );
 }

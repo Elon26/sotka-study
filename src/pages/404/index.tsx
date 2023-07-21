@@ -4,6 +4,7 @@ import LinkButton from "@/components/common/LinkButton/LinkButton";
 import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHeader";
 import { githubHomePageUrl } from "../../data/contants.json";
 import { useRouter } from "next/router";
+import Container from "@/components/common/Container/Container";
 
 export default function PageNotFound(): React.ReactElement {
     const router = useRouter();
@@ -18,7 +19,7 @@ export default function PageNotFound(): React.ReactElement {
                 <link rel="icon" href={githubHomePageUrl + "favicon.png"} />
             </Head>
             <main>
-                <div className="container">
+                <Container>
                     <div className={styles.body}>
                         <SecondPageHeader
                             firstLine="Страница не найдена! :'("
@@ -31,7 +32,7 @@ export default function PageNotFound(): React.ReactElement {
                             border="none"
                         />
                     </div>
-                </div>
+                </Container>
             </main>
         </>
     );
