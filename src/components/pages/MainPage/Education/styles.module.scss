@@ -212,7 +212,8 @@
 .video {
     border-radius: 24px;
     overflow: hidden;
-    background: radial-gradient(#55ddff, #0081b5);
+    // background: radial-gradient(#55ddff, #0081b5);
+    background: url("https://elon26.github.io/sotka-study/images/main-page/video_preview.webp") 0 0 / cover no-repeat;
 }
 
 .secondCardImage {
@@ -314,7 +315,8 @@
     height: 350px;
     border-radius: 24px;
     overflow: hidden;
-    background: radial-gradient(#55ddff, #0081b5);
+    // background: radial-gradient(#55ddff, #0081b5);
+    background: url("https://elon26.github.io/sotka-study/images/main-page/video_preview.webp") 0 0 / cover no-repeat;
 
     @media (max-width: $md5) {
         height: 250px;
