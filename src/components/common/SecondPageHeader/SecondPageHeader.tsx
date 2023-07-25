@@ -10,7 +10,7 @@ interface SecondPageHeaderProps {
 export default function SecondPageHeader({ firstLine, secondLine, firstLineColor, secondLineColor }: SecondPageHeaderProps): React.ReactElement {
     return (
         <h2 className={styles.wrapper}>
-            <p>{firstLine}</p>
+            <p className={`${firstLineColor === "blue" && styles.blue}`}>{firstLine}</p>
             {secondLine && <p className={`${secondLineColor === "blue" && styles.blue}`}>{secondLine}</p>}
         </h2>
     );

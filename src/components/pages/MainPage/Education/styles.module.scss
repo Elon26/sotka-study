@@ -27,6 +27,19 @@
             background-color: $color-blue;
         }
     }
+
+    @media (hover: hover) {
+        &:hover {
+            & .number {
+                background-color: rgba(20, 85, 255, 0.1);
+                color: $color-blue;
+            }
+
+            & .line {
+                background-color: $color-blue;
+            }
+        }
+    }
 }
 
 .row {

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import styles from "./styles.module.scss";
 import MainSwitch from "./MainSwitch/MainSwitch";
 import StudentsArea from "./StudentsArea/StudentsArea";
 import ParentsArea from "./ParentsArea/ParentsArea";
