@@ -9,8 +9,7 @@ export default function FeedbackVideoGridItem(): React.ReactElement {
                 <div className={styles.name}>Аня</div>
                 <div className={styles.media}>
                     <ReactPlayer
-                        url={"video/feedback.mp4"}
-                        // url={githubHomePageUrl + "video/feedback.mp4"}
+                        url={githubHomePageUrl + "video/feedback.mp4"}
                         controls={true}
                         width="100%"
                         height="100%"
