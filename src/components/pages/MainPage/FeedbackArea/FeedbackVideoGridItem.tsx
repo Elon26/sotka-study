@@ -6,7 +6,7 @@ export default function FeedbackVideoGridItem(): React.ReactElement {
     return (
         <div className={`${styles.gridItem} ${styles.gridItem2}`}>
             <div className={styles.gridItemBody}>
-                <div className={styles.name}>Аня</div>
+                <div className={styles.videoName}>Аня</div>
                 <div className={styles.media}>
                     <ReactPlayer
                         url={githubHomePageUrl + "video/feedback.mp4"}

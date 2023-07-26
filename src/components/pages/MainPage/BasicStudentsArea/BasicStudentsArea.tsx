@@ -20,7 +20,8 @@ export default function BasicStudentsArea(): React.ReactElement {
                     size="middle"
                 />
                 <SimpleText
-                    text="всего от 3 700 ₽ за 4 предмета в месяц без доплат за 2-ой, 3-ий и 4-ый предмет!"
+                    firstLine="всего от 3 700 ₽ за 4 предмета в месяц без доплат за 2-ой, 3-ий и 4-ый предмет!"
+                    textSize="small"
                 />
                 <WhiteSpace
                     size="middle"

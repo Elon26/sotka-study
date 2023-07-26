@@ -9,51 +9,182 @@
         "gridItem1 gridItem1 gridItem1 gridItem2 gridItem2 gridItem3 gridItem3"
         "gridItem4 gridItem5 gridItem5 gridItem2 gridItem2 gridItem6 gridItem6"
         "gridItem4 gridItem7 gridItem7 gridItem7 gridItem7 gridItem8 gridItem8";
+
+    @media (max-width: $md2) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 190px 190px 170px 190px;
+        grid-template-areas:
+            "gridItem1 gridItem1 gridItem1 gridItem1 gridItem2 gridItem2"
+            "gridItem4 gridItem4 gridItem5 gridItem5 gridItem2 gridItem2"
+            "gridItem4 gridItem4 gridItem7 gridItem7 gridItem7 gridItem7"
+            "gridItem3 gridItem3 gridItem6 gridItem6 gridItem8 gridItem8";
+    }
+
+    @media (max-width: $md4) {
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 230px 190px repeat(4, 190px);
+        grid-template-areas:
+            "gridItem1 gridItem1 gridItem2 gridItem2"
+            "gridItem4 gridItem4 gridItem2 gridItem2"
+            "gridItem4 gridItem4 gridItem3 gridItem3"
+            "gridItem7 gridItem7 gridItem7 gridItem7"
+            "gridItem6 gridItem6 gridItem5 gridItem5"
+            "gridItem8 gridItem8 gridItem8 gridItem8";
+    }
+
+    @media (max-width: $md5) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "gridItem1"
+            "gridItem2"
+            "gridItem3"
+            "gridItem4"
+            "gridItem5"
+            "gridItem6"
+            "gridItem7"
+            "gridItem8";
+    }
 }
 
 .gridItem {
     position: relative;
     border-radius: 24px;
     padding: 20px;
+
+    &.gridItemBig {
+        z-index: 3;
+
+        & .feedback {
+            overflow: auto;
+            padding-right: 10px;
+
+            scrollbar-width: 16px;
+            scrollbar-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.05);
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+            &::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.05);
+                border-radius: calc(16px / 4);
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, 0.15);
+                border-radius: calc(16px / 4);
+                border: 0 solid rgba(0, 0, 0, 0.05);
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.7) 90%);
+            }
+
+            @media (max-width: $md5) {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: $md5) {
+            width: 100% !important;
+            height: 100% !important;
+            right: auto !important;
+        }
+    }
 }
 
 .gridItem1 {
     grid-area: gridItem1;
     background-color: $color-gray-light;
+
+    &.gridItemBig {
+        height: 150%;
+
+        @media (max-width: $md4) {
+            width: 150%;
+        }
+    }
 }
 
 .gridItem2 {
     grid-area: gridItem2;
     background-color: $color-gray-light;
     color: $color-white;
+
+    @media (max-width: $md5) {
+        & .gridItemBody {
+            height: calc(100% + 40px);
+        }
+    }
 }
 
 .gridItem3 {
     grid-area: gridItem3;
     background-color: $color-blue;
     color: $color-white;
+
+    &.gridItemBig {
+        height: 120%;
+        width: 150%;
+        right: 50%;
+
+        @media (max-width: $md2) {
+            right: auto;
+            height: 150%;
+        }
+
+        @media (max-width: $md4) {
+            right: 50%;
+        }
+    }
 }
 
 .gridItem4 {
     grid-area: gridItem4;
     background-color: $color-purple;
     color: $color-white;
+
+    &.gridItemBig {
+        height: 110%;
+        width: 150%;
+    }
 }
 
 .gridItem5 {
     grid-area: gridItem5;
     background-color: $color-black;
     color: $color-white;
+
+    &.gridItemBig {
+        height: 220%;
+        width: 150%;
+
+        @media (max-width: $md4) {
+            height: 150%;
+            right: 50%;
+        }
+    }
 }
 
 .gridItem6 {
     grid-area: gridItem6;
     background-color: $color-gray-light;
+
+    &.gridItemBig {
+        height: 150%;
+        width: 150%;
+        right: 50%;
+
+        @media (max-width: $md2) {
+            right: auto;
+        }
+    }
 }
 
 .gridItem7 {
     grid-area: gridItem7;
     background-color: $color-gray-light;
+
+    &.gridItemBig {
+        height: 120%;
+    }
 }
 
 .gridItem8 {
@@ -76,18 +207,40 @@
 }
 
 .name {
-    position: relative;
-    z-index: 2;
     font-size: 24px;
     font-weight: bold;
 }
 
-.feedbackShort {
-    flex: 1 1 auto;
-    font-size: 16px;
+.videoName {
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    font-weight: bold;
+
+    @media (max-width: $md1) {
+        margin-top: 10px;
+    }
+
+    @media (max-width: $md2) {
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    @media (max-width: $md5) {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
 }
 
-.showAll {
+.feedback {
+    flex: 1 1 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.toggleSizeButton {
     font-size: 16px;
     cursor: pointer;
     text-decoration: underline;
@@ -101,4 +254,11 @@
     height: 100%;
     border-radius: 24px;
     overflow: hidden;
+
+    @media (max-width: $md5) {
+        position: relative;
+        top: -20px;
+        left: -20px;
+        width: calc(100% + 40px);
+    }
 }
