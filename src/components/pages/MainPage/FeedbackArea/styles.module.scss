@@ -262,3 +262,18 @@
         width: calc(100% + 40px);
     }
 }
+
+.pigContainer {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.pigImage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1500px;
+    height: 100%;
+}
