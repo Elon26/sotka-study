@@ -2,7 +2,7 @@ import Container from "../Container/Container";
 import styles from "./styles.module.scss";
 
 interface PageAreaProps {
-    color: "white" | "blackLight"
+    color: "white" | "blackLight" | "blue"
     innerPadding: boolean
     children: React.ReactElement
 }
@@ -14,6 +14,7 @@ export default function PageArea({ color, innerPadding, children }: PageAreaProp
             ${innerPadding && styles.innerPadding}
             ${color === "white" && styles.white}
             ${color === "blackLight" && styles.blackLight}
+            ${color === "blue" && styles.blue}
         `}>
             {children}
         </div>
