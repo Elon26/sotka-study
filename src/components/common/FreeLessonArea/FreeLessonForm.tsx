@@ -36,7 +36,8 @@ export default function FreeLessonForm(): React.ReactElement {
             //     .catch((err) => {
             //         console.log("FAILED...", err);
             //     });
-            setData(defaultFreeLessonFormData);
+
+            // setData(defaultFreeLessonFormData);
         }
     };
 
