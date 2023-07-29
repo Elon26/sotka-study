@@ -1,4 +1,6 @@
 import { ISimpleObject } from "@/data/models";
+import Link from "next/link";
+import { githubHomePageUrl } from "../../../data/contants.json";
 
 interface InputTextProps {
     styles: ISimpleObject
@@ -26,7 +28,14 @@ export default function Checkbox({ styles, name, value, setNewValue }: InputText
                 className={`${styles.checkboxLabel} ${value && styles.checked}`}
                 htmlFor={name}
             >
-                Согласен с политикой обработки персональных данных*
+                <span>Согласен с </span>
+                <Link
+                    href={githubHomePageUrl + "docs/popd.pdf"}
+                    className={styles.popdLink}
+                    target="_blank"
+                >
+                    политикой обработки персональных данных*
+                </Link>
             </label>
         </div>
     );

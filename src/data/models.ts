@@ -27,3 +27,10 @@ export interface ITeacher {
 export interface ISimpleObject {
     [key: string]: string;
 }
+
+export interface IFreeLessonFormObject {
+    grade: string;
+    name: string;
+    phone: string;
+    popd: boolean;
+}

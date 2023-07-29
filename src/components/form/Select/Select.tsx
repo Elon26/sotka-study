@@ -5,12 +5,13 @@ import { BsChevronDown } from "react-icons/bs";
 
 interface SelectProps {
     styles: ISimpleObject
+    name: string
     value: string
     values: string[]
     setNewValue(name: string, value: string): void
 }
 
-export default function Select({ styles, value, values, setNewValue }: SelectProps): React.ReactElement {
+export default function Select({ styles, name, value, values, setNewValue }: SelectProps): React.ReactElement {
     const { elemInFocus } = useClickCatcher();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Select({ styles, value, values, setNewValue }: SelectPro
         const dropdownItem = target.closest(`.${styles.dropdownItem}`);
         const dropdownItemValue = dropdownItem && dropdownItem.textContent;
 
-        if (dropdownItemValue) setNewValue("grade", dropdownItemValue);
+        if (dropdownItemValue) setNewValue(name, dropdownItemValue);
     }
 
     useEffect(() => {

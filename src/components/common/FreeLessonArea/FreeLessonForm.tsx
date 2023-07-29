@@ -5,9 +5,10 @@ import Select from "@/components/form/Select/Select";
 import InputText from "@/components/form/InputText/InputText";
 import InputPhone from "@/components/form/InputPhone/InputPhone";
 import Checkbox from "@/components/form/Checkbox/Checkbox";
+import { IFreeLessonFormObject } from "@/data/models";
 
 export default function FreeLessonForm(): React.ReactElement {
-    const [data, setData] = useState(defaultFreeLessonFormData);
+    const [data, setData] = useState<IFreeLessonFormObject>(defaultFreeLessonFormData);
 
     function setNewValue(name: string, value: string | boolean): void {
         setData(prev => ({
@@ -19,26 +20,24 @@ export default function FreeLessonForm(): React.ReactElement {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
 
-        console.log(data);
+        const isValid = true;
+        if (isValid) {
+            console.log("Данные отправлены", data);
 
-        setData(defaultFreeLessonFormData);
-
-        // const isValid = validate();
-        // if (isValid) {
-        //     send(
-        //         "service_qb74c3z",
-        //         "template_pvg5gbg",
-        //         data,
-        //         "omHUDjCn2WjDLmNlN"
-        //     )
-        //         .then((response) => {
-        //             console.log("SUCCESS!", response.status, response.text);
-        //         })
-        //         .catch((err) => {
-        //             console.log("FAILED...", err);
-        //         });
-        //     setData(defaultFreeLessonFormData);
-        // }
+            // send(
+            //     "service_qb74c3z",
+            //     "template_pvg5gbg",
+            //     data,
+            //     "omHUDjCn2WjDLmNlN"
+            // )
+            //     .then((response) => {
+            //         console.log("SUCCESS!", response.status, response.text);
+            //     })
+            //     .catch((err) => {
+            //         console.log("FAILED...", err);
+            //     });
+            setData(defaultFreeLessonFormData);
+        }
     };
 
     return (
@@ -48,6 +47,7 @@ export default function FreeLessonForm(): React.ReactElement {
         >
             <Select
                 styles={styles}
+                name="grade"
                 value={data.grade}
                 values={gradesOfSchool}
                 setNewValue={setNewValue}
