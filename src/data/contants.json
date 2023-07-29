@@ -17,5 +17,17 @@
         "social",
         "russian",
         "geography"
+    ],
+    "defaultFreeLessonFormData": {
+        "grade": "",
+        "name": "",
+        "phone": "",
+        "popd": true
+    },
+    "gradesOfSchool": [
+        "8",
+        "9",
+        "10",
+        "11"
     ]
 }

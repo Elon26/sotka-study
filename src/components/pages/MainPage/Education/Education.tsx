@@ -9,7 +9,7 @@ export default function Education(): React.ReactElement {
     const { windowWidth } = useWindowDimensions();
     const [selectedHeader, setSelectedHeader] = useState(1);
 
-    function changeSelectedHeader(e: React.MouseEvent<HTMLElement>) {
+    function changeSelectedHeader(e: React.MouseEvent<HTMLElement>): void {
         const target = e.target as HTMLElement;
         const button = target.closest(`.${styles.header}`) as HTMLElement;
         const buttonNumber = button && button.dataset.infoNumber;

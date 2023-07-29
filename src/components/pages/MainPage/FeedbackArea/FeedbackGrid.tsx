@@ -7,7 +7,7 @@ import FeedbackTextGridItem from "./FeedbackTextGridItem";
 export default function FeedbackGrid(): React.ReactElement {
     const [selectedFeedback, setSelectedFeedback] = useState(0);
 
-    function changeSelectedFeedback(e: React.MouseEvent<HTMLElement>) {
+    function changeSelectedFeedback(e: React.MouseEvent<HTMLElement>): void {
         const target = e.target as HTMLElement;
         const toggleSizeButton = target.closest(`.${styles.toggleSizeButton}`) as HTMLElement;
         const mainpageFeedbackItem = toggleSizeButton && toggleSizeButton.dataset.mainpageFeedbackItem;

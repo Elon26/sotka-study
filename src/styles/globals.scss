@@ -68,6 +68,17 @@ ol {
     list-style-type: none;
 }
 
+button {
+    border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .pagewrapper {
     min-height: 100vh;
     display: flex;

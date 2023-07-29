@@ -15,7 +15,7 @@ const AppLoader = ({
     const isEgeTeachersLoading = useAppSelector(getEgeTeachersLoadingStatus());
     const isOgeTeachersLoading = useAppSelector(getOgeTeachersLoadingStatus());
 
-    const fetchData = async () => {
+    const fetchData = async (): Promise<void> => {
         try {
             await Promise.all([
                 dispatch(loadEgeTeachersList()),

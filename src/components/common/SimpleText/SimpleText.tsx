@@ -1,12 +1,12 @@
 import styles from "./styles.module.scss";
 
-interface SimpleText {
+interface SimpleTextProps {
     firstLine: string
     secondLine?: string
     textSize: "small" | "middle"
 }
 
-export default function SimpleText({ firstLine, secondLine, textSize }: SimpleText): React.ReactElement {
+export default function SimpleText({ firstLine, secondLine, textSize }: SimpleTextProps): React.ReactElement {
     return (
         <div
             className={`

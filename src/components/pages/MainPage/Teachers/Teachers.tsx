@@ -20,7 +20,7 @@ export default function Teachers(): React.ReactElement {
     const [selectedOgeDiscipline, setSelectedOgeDiscipline] = useState<Disciplines>(ogeDisciplines[0]);
     const [selectedTeacher, setSelectedTeacher] = useState<ITeacher>(egeTeachers[0]);
 
-    function changeSelectedArea(e: React.MouseEvent<HTMLElement>) {
+    function changeSelectedArea(e: React.MouseEvent<HTMLElement>): void {
         const target = e.target as HTMLElement;
         const buttonExamName = target.closest("button")?.dataset.buttonExamName as Exams;
         const buttonDisciplineName = target.closest("button")?.dataset.buttonDisciplineName as Disciplines;

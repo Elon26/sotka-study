@@ -23,3 +23,7 @@ export interface ITeacher {
     perfectStudents?: number;
     relatedDisciplines: Disciplines[];
 }
+
+export interface ISimpleObject {
+    [key: string]: string;
+}
