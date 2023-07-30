@@ -9,13 +9,13 @@ export default function MainPage(): React.ReactElement {
 
     return (
         <>
-            <MainSwitch
+            {/* <MainSwitch
                 mainSwitch={mainSwitch}
                 changeMainSwitch={value => setMainSwitch(value)}
-            />
+            /> 
             <WhiteSpace
                 size="middle"
-            />
+            />*/}
             {mainSwitch === "students" && <StudentsArea />}
             {mainSwitch === "parents" && <ParentsArea />}
         </>

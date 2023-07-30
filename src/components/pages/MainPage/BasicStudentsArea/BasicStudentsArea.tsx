@@ -35,11 +35,11 @@ export default function BasicStudentsArea(): React.ReactElement {
                 />
                 <GiftPicture />
                 <WhiteSpace
-                    size="small"
+                    size="big"
                 />
                 <Statistic />
                 <WhiteSpace
-                    size="middle"
+                    size="big"
                 />
                 <SecondPageHeader
                     firstLine="Уверен, что сдашь экзамены на нужный балл?"

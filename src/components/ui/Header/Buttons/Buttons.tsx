@@ -9,14 +9,14 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
     return (
         <div className={styles.wrapper}>
             {screen === "big" && (<>
-                <LinkButton
+                {/* <LinkButton
                     text="Войти"
                     link="/login"
                     size="mini"
                     color="transparent"
                     border="none"
                     withIcon={true}
-                />
+                /> */}
                 <LinkButton
                     text="Вводный урок"
                     link="/#form"
@@ -27,14 +27,14 @@ export default function Buttons({ screen }: ButtonsProps): React.ReactElement {
             </>)
             }
             {screen === "small" && (<>
-                <LinkButton
+                {/* <LinkButton
                     text="Войти на платформу"
                     link="/login"
                     size="big"
                     color="transparent"
                     border="white"
                     withIcon={true}
-                />
+                /> */}
                 <LinkButton
                     text="Вводный урок"
                     link="/#form"

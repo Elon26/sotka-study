@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "./styles.module.scss";
 import { githubHomePageUrl } from "../../data/contants.json";
 import Backup from "@/components/pages/AdminPage/Backup/Backup";
 
