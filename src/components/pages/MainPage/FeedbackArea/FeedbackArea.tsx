@@ -50,6 +50,10 @@ export default function FeedbackArea(): React.ReactElement {
                     size="middle"
                 />
                 <FeedbackPig />
+                <WhiteSpace
+                    size="small"
+                    id="form"
+                />
             </>
         </PageArea>
     );

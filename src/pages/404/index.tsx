@@ -5,10 +5,12 @@ import SecondPageHeader from "@/components/common/SecondPageHeader/SecondPageHea
 import { githubHomePageUrl } from "../../data/contants.json";
 import { useRouter } from "next/router";
 import Container from "@/components/common/Container/Container";
+import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
+import FreeLesson from "@/components/common/FreeLesson/FreeLesson";
 
 export default function PageNotFound(): React.ReactElement {
     const router = useRouter();
-    router.push(githubHomePageUrl + router.asPath);
+    // router.push(githubHomePageUrl + router.asPath);
 
     return (
         <>
@@ -30,6 +32,13 @@ export default function PageNotFound(): React.ReactElement {
                             size="middle"
                             color="blue"
                             border="none"
+                        />
+                        <WhiteSpace
+                            size="small"
+                        />
+                        <FreeLesson />
+                        <WhiteSpace
+                            size="small"
                         />
                     </div>
                 </Container>

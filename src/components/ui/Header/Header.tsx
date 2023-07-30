@@ -7,14 +7,11 @@ import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 import Burger from "./Burger/Burger";
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import { handleLockBodyScroll } from "@/utils/handleLockBodyScroll";
-import { useRouter } from "next/router";
 import Container from "@/components/common/Container/Container";
 
 export default function Header(): React.ReactElement {
     const { windowWidth } = useWindowDimensions();
     const [isOpenBurger, setIsOpenBurger] = useState(false);
-    const router = useRouter();
-    const route = router.route;
 
     function openBurger(): void {
         setIsOpenBurger(true);
@@ -25,10 +22,6 @@ export default function Header(): React.ReactElement {
         setIsOpenBurger(false);
         handleLockBodyScroll("unlock");
     }
-
-    useEffect(() => {
-        closeBurger();
-    }, [route]);
 
     return (
         <header>
@@ -56,6 +49,7 @@ export default function Header(): React.ReactElement {
             {windowWidth < 1024 && (
                 <DropdownMenu
                     isOpenBurger={isOpenBurger}
+                    handleClick={() => closeBurger()}
                 />
             )}
         </header>

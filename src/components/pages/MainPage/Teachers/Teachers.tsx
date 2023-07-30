@@ -7,6 +7,7 @@ import { Disciplines, Exams, ITeacher } from "@/data/models";
 import DisciplineArea from "./DisciplineArea";
 import ExamArea from "./ExamArea";
 import TeacherArea from "./TeacherArea";
+import WhiteSpace from "@/components/common/WhiteSpace/WhiteSpace";
 
 export default function Teachers(): React.ReactElement {
     const egeTeachers = useAppSelector(getEgeTeachersList());

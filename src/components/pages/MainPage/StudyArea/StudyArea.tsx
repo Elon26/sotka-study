@@ -23,6 +23,7 @@ export default function StudyArea(): React.ReactElement {
                     <Teachers />
                     <WhiteSpace
                         size="middle"
+                        id="education"
                     />
                     <SecondPageHeader
                         firstLine="Все, что тебе нужно для подготовки, —"
