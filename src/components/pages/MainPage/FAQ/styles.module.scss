@@ -1,0 +1,23 @@
+@import "../../../../data/variables.scss";
+
+.FAQ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (max-width: $md4) {
+        display: block;
+    }
+}
+
+.col {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: $md4) {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

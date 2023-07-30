@@ -5,11 +5,12 @@ import { githubHomePageUrl } from "../../../data/contants.json";
 interface InputTextProps {
     styles: ISimpleObject
     value: boolean
+    error: string
     name: string
     setNewValue(name: string, value: string | boolean): void
 }
 
-export default function Checkbox({ styles, name, value, setNewValue }: InputTextProps): React.ReactElement {
+export default function Checkbox({ styles, name, error, value, setNewValue }: InputTextProps): React.ReactElement {
     function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
         setNewValue(name, e.target.checked);
     }
@@ -25,7 +26,11 @@ export default function Checkbox({ styles, name, value, setNewValue }: InputText
                 checked={value}
             />
             <label
-                className={`${styles.checkboxLabel} ${value && styles.checked}`}
+                className={`
+                    ${styles.checkboxLabel} 
+                    ${value && styles.checked}
+                    ${error && styles.checkboxError}
+                `}
                 htmlFor={name}
             >
                 <span>Согласен с </span>

@@ -5,6 +5,7 @@ interface InputPhoneProps {
     styles: ISimpleObject
     value: string
     name: string
+    error: string
     setNewValue(name: string, value: string): void
     placeholder: string
 }
@@ -12,6 +13,7 @@ interface InputPhoneProps {
 export default function InputPhone({
     name,
     value,
+    error,
     setNewValue,
     placeholder,
     styles
@@ -86,7 +88,10 @@ export default function InputPhone({
     };
 
     return (
-        <div className={styles.formItem}>
+        <div className={`
+            ${styles.formItem} 
+            ${error && styles.error} 
+        `}>
             <input
                 className={styles.inputItem}
                 type="text"
@@ -98,6 +103,7 @@ export default function InputPhone({
                 onBlur={handleBlur}
                 placeholder={placeholder}
             />
+            {error && <div className={styles.errorMessage}>{error}</div>}
         </div>
     );
 };

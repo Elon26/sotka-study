@@ -34,3 +34,11 @@ export interface IFreeLessonFormObject {
     phone: string;
     popd: boolean;
 }
+
+export interface IValidateSettings {
+    [key: string]: {
+        [key: string]: {
+            message: string;
+        };
+    };
+}

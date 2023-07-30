@@ -7,11 +7,12 @@ interface SelectProps {
     styles: ISimpleObject
     name: string
     value: string
+    error: string
     values: string[]
     setNewValue(name: string, value: string): void
 }
 
-export default function Select({ styles, name, value, values, setNewValue }: SelectProps): React.ReactElement {
+export default function Select({ styles, name, value, error, values, setNewValue }: SelectProps): React.ReactElement {
     const { elemInFocus } = useClickCatcher();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -33,7 +34,12 @@ export default function Select({ styles, name, value, values, setNewValue }: Sel
 
     return (
         <div
-            className={`${styles.formItem} ${isDropdownOpen && styles.withDropdown} ${styles.selectItem}`}
+            className={`
+            ${styles.formItem} 
+            ${isDropdownOpen && styles.withDropdown} 
+            ${styles.selectItem}
+            ${error && styles.error} 
+            `}
             onClick={handleClick}
         >
             <div className={styles.basicArea}>
@@ -51,6 +57,7 @@ export default function Select({ styles, name, value, values, setNewValue }: Sel
                     </div>
                 ))}
             </div>
+            {error && <div className={styles.errorMessage}>{error}</div>}
         </div>
     );
 }

@@ -29,5 +29,11 @@
         "name": "",
         "phone": "",
         "popd": true
+    },
+    "defaultFreeLessonFormErrors": {
+        "grade": "",
+        "name": "",
+        "phone": "",
+        "popd": ""
     }
 }
