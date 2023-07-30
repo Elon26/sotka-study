@@ -10,7 +10,7 @@ import FreeLesson from "@/components/common/FreeLesson/FreeLesson";
 
 export default function PageNotFound(): React.ReactElement {
     const router = useRouter();
-    // router.push(githubHomePageUrl + router.asPath);
+    router.push(githubHomePageUrl + router.asPath);
 
     return (
         <>
