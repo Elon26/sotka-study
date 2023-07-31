@@ -12,10 +12,8 @@
     &.open {
         height: 260px;
 
-        & .question::after {
-            top: 50%;
-            right: 0;
-            transform: translate(0%, -50%) rotate(0deg);
+        & .spoilerButton::after {
+            transform: translate(-50%, -50%) rotate(0);
         }
     }
 
@@ -42,6 +40,8 @@
     padding-right: 50px;
     font-size: 22px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 
     @media (max-width: $md2) {
         font-size: 18px;
@@ -50,31 +50,35 @@
     @media (max-width: $md4) {
         padding-bottom: 0;
     }
+}
+
+.spoilerButton {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $color-gray-light;
+    border-radius: 50%;
+    color: $color-black;
 
     &::before,
     &::after {
-        content: "—";
+        content: "";
         position: absolute;
         top: 50%;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        color: $color-black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease 0s;
-    }
-
-    &::before {
-        right: 0;
-        transform: translate(0%, -50%);
-        background-color: $color-gray-light;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 2px;
+        background-color: $color-black;
     }
 
     &::after {
-        right: -2px;
-        transform: translate(0%, -50%) rotate(90deg);
+        transform: translate(-50%, -50%) rotate(-90deg);
+        transition: transform 0.3s ease 0s;
     }
 }
 

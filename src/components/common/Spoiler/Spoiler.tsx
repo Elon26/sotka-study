@@ -20,7 +20,10 @@ export default function Spoiler({ question, answer }: SpoilerProps): React.React
             `}
             onClick={() => setIsOpen(prev => !prev)}
         >
-            <div className={styles.question}>{question}</div>
+            <div className={styles.question}>
+                <span>{question}</span>
+                <span className={styles.spoilerButton}></span>
+            </div>
             {(windowWidth >= 768 || windowWidth < 768 && isOpen) && <div className={styles.answer}>{answer}</div>}
         </div >
     );
