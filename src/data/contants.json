@@ -35,5 +35,15 @@
         "name": "",
         "phone": "",
         "popd": ""
+    },
+    "defaultCallMeBackFormData": {
+        "name": "",
+        "phone": "",
+        "popd": true
+    },
+    "defaultCallMeBackFormErrors": {
+        "name": "",
+        "phone": "",
+        "popd": ""
     }
 }

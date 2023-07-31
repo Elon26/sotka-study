@@ -7,20 +7,21 @@ interface InputTextProps {
     value: boolean
     error: string
     name: string
+    id: string
     setNewValue(name: string, value: string | boolean): void
 }
 
-export default function Checkbox({ styles, name, error, value, setNewValue }: InputTextProps): React.ReactElement {
+export default function Checkbox({ styles, name, id, error, value, setNewValue }: InputTextProps): React.ReactElement {
     function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
         setNewValue(name, e.target.checked);
     }
 
     return (
-        <div>
+        <div className={styles.checkboxArea}>
             <input
                 type="checkbox"
                 name={name}
-                id={name}
+                id={id}
                 className={styles.checkboxItem}
                 onChange={handleChange}
                 checked={value}
@@ -31,7 +32,7 @@ export default function Checkbox({ styles, name, error, value, setNewValue }: In
                     ${value && styles.checked}
                     ${error && styles.checkboxError}
                 `}
-                htmlFor={name}
+                htmlFor={id}
             >
                 <span>Согласен с </span>
                 <Link

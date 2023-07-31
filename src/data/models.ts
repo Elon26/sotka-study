@@ -35,6 +35,12 @@ export interface IFreeLessonFormObject {
     popd: boolean;
 }
 
+export interface ICallMeBackFormObject {
+    name: string;
+    phone: string;
+    popd: boolean;
+}
+
 export interface IValidateSettings {
     [key: string]: {
         [key: string]: {

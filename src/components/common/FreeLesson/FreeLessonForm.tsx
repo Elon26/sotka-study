@@ -123,11 +123,16 @@ export default function FreeLessonForm(): React.ReactElement {
             <Checkbox
                 styles={styles}
                 name="popd"
+                id="popd"
                 value={data.popd}
                 setNewValue={setNewValue}
                 error={errors.popd}
             />
-            <ThanksForOrder isFormSended={isFormSended} />
+            <ThanksForOrder
+                styles={styles}
+                isFormSended={isFormSended}
+                you="тебе"
+            />
         </form>
     );
 }
