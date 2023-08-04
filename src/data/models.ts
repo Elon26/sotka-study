@@ -3,6 +3,8 @@ export type Exams = "егэ" | "огэ";
 
 export interface DisciplineData {
     russianName: string;
+    declination: string;
+    logo: React.ReactElement
 }
 
 export interface ITeacher {
@@ -22,6 +24,8 @@ export interface ITeacher {
     excellentStudents?: number;
     perfectStudents?: number;
     relatedDisciplines: Disciplines[];
+    youtubeLink: string;
+    youtubeTitle: string;
 }
 
 export interface ISimpleObject {

@@ -42,6 +42,8 @@ export default function AdditionalArea(): React.ReactElement {
                 <CustomerButtons
                     withSign={false}
                     target="students"
+                    firstButtonColor="purple"
+                    secondButtonColor="gray-dark"
                 />
                 <WhiteSpace
                     size="big"

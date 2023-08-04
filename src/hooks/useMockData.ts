@@ -39,6 +39,7 @@ const useMockData = () => {
 
     useEffect(() => {
         updateProgress();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [count]);
 
     async function initialize() {
@@ -46,11 +47,13 @@ const useMockData = () => {
             for (const egeTeacher of egeTeachers) {
                 const teacher = egeTeacher as ITeacher;
                 await putItemToFirebase("egeTeacher", teacher);
+                // putItemToFirebase("egeTeacher", teacher);
                 incrementCount();
             }
             for (const ogeTeacher of ogeTeachers) {
                 const teacher = ogeTeacher as ITeacher;
                 await putItemToFirebase("ogeTeacher", teacher);
+                // putItemToFirebase("ogeTeacher", teacher);
                 incrementCount();
             }
         } catch (error) {

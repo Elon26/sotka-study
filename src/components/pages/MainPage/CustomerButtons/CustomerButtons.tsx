@@ -6,9 +6,12 @@ import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 interface CustomerButtonsProps {
     withSign: boolean
     target: "students" | "parents"
+    firstButtonColor: "purple" | "blue"
+    secondButtonColor: "gray-dark" | "purple"
+
 }
 
-export default function CustomerButtons({ withSign, target }: CustomerButtonsProps): React.ReactElement {
+export default function CustomerButtons({ withSign, target, firstButtonColor, secondButtonColor }: CustomerButtonsProps): React.ReactElement {
     const { windowWidth } = useWindowDimensions();
 
     return (
@@ -18,14 +21,14 @@ export default function CustomerButtons({ withSign, target }: CustomerButtonsPro
                     text="Вводный урок"
                     link="/#form"
                     size={windowWidth >= 768 ? "middle" : "big"}
-                    color="purple"
+                    color={firstButtonColor}
                     border="none"
                 />
                 <LinkButton
                     text="Купить курс"
                     link="/tariffs"
                     size={windowWidth >= 768 ? "middle" : "big"}
-                    color="gray-dark"
+                    color={secondButtonColor}
                     border="none"
                 />
                 {target === "students" && withSign && <StudentsSign />}

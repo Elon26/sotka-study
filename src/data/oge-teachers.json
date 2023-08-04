@@ -8,8 +8,8 @@
         "advantages": [
             "сдала ЕГЭ по английскому языку на 90 баллов",
             "дипломированный переводчик с немецкого и английского языков",
-            "сдала IELTS на 7.5",
-            "призер Всероссийской олимпиады по английскому языку"
+            "призер Всероссийской олимпиады по английскому языку",
+            "сдала IELTS на 7.5"
         ],
         "vk": "https://vk.com/engoge100",
         "youtube": "https://t.me/ogeenglish100",
@@ -21,7 +21,9 @@
             "literature",
             "social",
             "history"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/_FcAkp8SoFE",
+        "youtubeTitle": "Аудирование"
     },
     {
         "id": "82143cis11ohk04",
@@ -43,7 +45,9 @@
             "russian",
             "mathematics",
             "chemistry"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/_8KJyansUxg",
+        "youtubeTitle": "Строение и жизнедеятельность бактериальной клетки"
     },
     {
         "id": "82143cis11ohk06",
@@ -65,7 +69,9 @@
             "russian",
             "informatics",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/Zq282Qla1hY",
+        "youtubeTitle": "Планетарная модель атома."
     },
     {
         "id": "82143cis11ohk08",
@@ -87,7 +93,9 @@
             "russian",
             "biology",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/1VQezrQ_L3I",
+        "youtubeTitle": "Задача 22"
     },
     {
         "id": "82143cis11ohk10",
@@ -110,7 +118,9 @@
             "literature",
             "social",
             "english"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/6nxKTV6rwQg",
+        "youtubeTitle": "Внутренняя политика Ивана Грозного"
     },
     {
         "id": "82143cis11ohk12",
@@ -132,7 +142,9 @@
             "russian",
             "physics",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/KPsPsIg92uk",
+        "youtubeTitle": "Пример задания 1"
     },
     {
         "id": "82143cis11ohk14",
@@ -154,7 +166,9 @@
             "russian",
             "history",
             "english"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/BtxUqDiPGD4",
+        "youtubeTitle": "Повесть «Шинель» Н. В. Гоголя"
     },
     {
         "id": "82143cis11ohk16",
@@ -180,7 +194,9 @@
             "social",
             "physics",
             "biology"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/LKa2EKuvzpI",
+        "youtubeTitle": "Центральные и вписанные углы"
     },
     {
         "id": "82143cis11ohk18",
@@ -203,7 +219,9 @@
             "history",
             "english",
             "literature"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/0HuNmAQB_oQ",
+        "youtubeTitle": "Политические партии"
     },
     {
         "id": "82143cis11ohk20",
@@ -231,7 +249,9 @@
             "literature",
             "geography",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/LqlzE2s25w0",
+        "youtubeTitle": "Написанрие Ъ и Ь"
     },
     {
         "id": "82143cis11ohk21",
@@ -253,6 +273,8 @@
             "russian",
             "informatics",
             "chemistry"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/M6bTpThVxeI",
+        "youtubeTitle": "Самые простые баллы на ОГЭ по географии"
     }
 ]

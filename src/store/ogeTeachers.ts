@@ -81,6 +81,11 @@ export const getOgeTeachersList =
         (state: RootState): ITeacher[] =>
             state.ogeTeachers.entities;
 
+export const getOgeTeacher =
+    (discipline: Disciplines) =>
+        (state: RootState): ITeacher | null =>
+            state.ogeTeachers.entities.find(teacher => teacher.discipline === discipline) || null;
+
 export const getOgeDisciplines =
     () =>
         (state: RootState): Disciplines[] =>

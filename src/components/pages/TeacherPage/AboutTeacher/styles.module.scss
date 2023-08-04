@@ -1,0 +1,328 @@
+@import "../../../../data/variables.scss";
+
+.wrapper {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.firstRow {
+    display: flex;
+    padding-top: 40px;
+
+    @media (max-width: $md3) {
+        flex-direction: column;
+    }
+}
+
+.secondRow {
+    display: flex;
+    @media (max-width: $md3) {
+        flex-direction: column;
+    }
+}
+
+.shape {
+    height: 250px;
+    padding: 25px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    position: relative;
+
+    @media (max-width: $md1) {
+        height: 200px;
+        font-size: 16px;
+    }
+
+    @media (max-width: $md3) {
+        height: 100%;
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.rectangleShape {
+    border-radius: 24px;
+}
+
+.circleShape {
+    flex: 0 0 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: $md1) {
+        flex: 0 0 200px;
+    }
+}
+
+.image {
+    position: absolute;
+}
+
+.firstShape {
+    flex: 1 1 45%;
+    background-color: $color-purple;
+    color: $color-white;
+
+    & .plane {
+        width: 100%;
+        left: 0;
+        bottom: -72px;
+    }
+
+    @media (max-width: $md3) {
+        & .plane {
+            position: relative;
+            width: 120%;
+            height: auto;
+            object-fit: cover;
+            margin-top: -40%;
+            margin-bottom: -20%;
+        }
+    }
+
+    @media (max-width: $md5) {
+        & .plane {
+            margin-bottom: -10%;
+        }
+    }
+}
+
+.secondShape {
+    position: relative;
+    flex: 1 1 35%;
+    background-color: $color-white;
+    border: 2px solid $color-gray-light;
+
+    & .images {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+    }
+
+    & .line {
+        color: $color-gray-light;
+    }
+
+    & .tooltip {
+        position: relative;
+        width: 140px;
+        height: 56px;
+        background-color: $color-gray-light;
+        border-radius: 12px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid $color-gray-light;
+        }
+    }
+
+    & .heart {
+        position: absolute;
+        top: -100%;
+        left: 15%;
+    }
+
+    @media (max-width: $md3) {
+        flex: 0 0 150px;
+        background-color: $color-gray-light;
+        & .images {
+            display: none;
+        }
+    }
+}
+
+.thirdShape {
+    background-color: $color-blue;
+    color: $color-white;
+
+    & .pen {
+        z-index: 2;
+        width: 160px;
+        height: 170px;
+        bottom: -27%;
+        left: 27%;
+        transform: rotate(15deg);
+    }
+
+    @media (max-width: $md3) {
+        background-color: $color-white;
+        color: $color-black;
+        border: 2px solid $color-purple;
+
+        & .pen {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            transform: rotate(0deg);
+            display: block;
+            margin: 10px auto -10%;
+            max-width: 300px;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+.fourthShape {
+    flex: 0 0 250px;
+    background-color: $color-white;
+    border: 2px solid $color-gray-light;
+
+    & .puzzle {
+        z-index: 2;
+        right: 10px;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    & .media {
+        display: none;
+    }
+
+    @media (max-width: $md1) {
+        flex: 0 0 200px;
+    }
+
+    @media (max-width: $md3) {
+        order: 1;
+        border: none;
+
+        & .puzzle {
+            display: none;
+        }
+
+        & .media {
+            display: block;
+            width: 47%;
+            height: auto;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.fifthShape {
+    background-color: $color-white;
+    border: 2px solid $color-gray-light;
+
+    @media (max-width: $md3) {
+        flex: 0 0 150px;
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
+
+.sixthShape {
+    flex: 1 1 auto;
+    background-color: $color-black;
+    color: $color-white;
+
+    & .cursor {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+    }
+
+    @media (max-width: $md3) {
+        & .cursor {
+            position: relative;
+            margin-top: -35%;
+            margin-bottom: -10%;
+        }
+    }
+}
+
+.seventhShape {
+    background-color: $color-gray-light;
+
+    & .line {
+        display: none;
+    }
+
+    @media (max-width: $md3) {
+        background-color: transparent;
+        border: 2px solid $color-blue;
+
+        & .line {
+            display: block;
+            color: $color-gray-light;
+            position: absolute;
+            width: 80px;
+            height: 85px;
+            top: 70%;
+            left: 51%;
+            transform: scaleY(-1) rotate(-214deg);
+        }
+    }
+}
+
+.shapeText {
+    position: relative;
+    z-index: 2;
+}
+
+.socialLinks {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $md3) {
+        margin-top: 20px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    @media (max-width: $md5) {
+        font-size: 16px;
+    }
+}
+
+.socialLinkItem {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.socialLink {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $color-gray-light;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.vkLink {
+        color: $color-blue;
+    }
+    &.youtubeLink {
+        color: $color-red;
+    }
+    &.telegramLink {
+        color: $color-blue;
+    }
+}

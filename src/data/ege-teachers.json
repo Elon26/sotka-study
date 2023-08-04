@@ -6,9 +6,9 @@
         "greeting": "Hey, guys! Ученики зовут меня Айзи, зови и ты. Я научу тебя не только решать ЕГЭ по английскому, но и говорить, любить и просто жить по-английски.",
         "experience": 8,
         "advantages": [
+            "пересдала ЕГЭ на 97 баллов в 2021",
             "ездила в Америку по студенческой программе на 3.5 месяца",
-            "3 красных диплома о высшем образовании",
-            "пересдала ЕГЭ на 97 баллов в 2021"
+            "3 красных диплома о высшем образовании"
         ],
         "isExpert": true,
         "vk": "https://vk.com/eng100ege",
@@ -24,7 +24,9 @@
             "literature",
             "social",
             "history"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/SezjB9Z8BVM",
+        "youtubeTitle": "Основы написания электронного письма"
     },
     {
         "id": "82143cis11ohk03",
@@ -50,7 +52,9 @@
             "russian",
             "mathematics",
             "chemistry"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/9w7ftjpdZKU",
+        "youtubeTitle": "Генетика и её задачи"
     },
     {
         "id": "82143cis11ohk05",
@@ -76,7 +80,9 @@
             "russian",
             "informatics",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/Zq282Qla1hY",
+        "youtubeTitle": "Планетарная модель атома."
     },
     {
         "id": "82143cis11ohk07",
@@ -102,7 +108,9 @@
             "russian",
             "biology",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/2h_NVNtwPTA",
+        "youtubeTitle": "Составление органических ОВР"
     },
     {
         "id": "82143cis11ohk09",
@@ -129,7 +137,9 @@
             "literature",
             "social",
             "english"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/_MGz1ANM_tA",
+        "youtubeTitle": "Политика княгини Ольги и Святослава Игоревича"
     },
     {
         "id": "82143cis11ohk11",
@@ -155,7 +165,9 @@
             "russian",
             "physics",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/8qwAUhzI2MY",
+        "youtubeTitle": "Программирование. Циклы"
     },
     {
         "id": "82143cis11ohk13",
@@ -181,7 +193,9 @@
             "russian",
             "history",
             "english"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/5TSvZUz18Wk",
+        "youtubeTitle": "А.С. Грибоедов 'Горе от ума'. Часть 1."
     },
     {
         "id": "82143cis11ohk15",
@@ -211,7 +225,9 @@
             "social",
             "physics",
             "biology"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/zrdl-g8TnSk",
+        "youtubeTitle": "Задачи на движение"
     },
     {
         "id": "82143cis11ohk17",
@@ -238,7 +254,9 @@
             "history",
             "english",
             "literature"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/ypDVGShKmCc",
+        "youtubeTitle": "Потребности и интересы"
     },
     {
         "id": "82143cis11ohk19",
@@ -269,6 +287,8 @@
             "biology",
             "literature",
             "mathematics"
-        ]
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/au5sKiOkQuk",
+        "youtubeTitle": "Все о проблеме в сочинении ЕГЭ"
     }
 ]

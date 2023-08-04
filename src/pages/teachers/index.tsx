@@ -1,7 +1,10 @@
 import Head from "next/head";
 import { githubHomePageUrl } from "../../data/contants.json";
+import { useRouter } from "next/router";
 
 export default function TeachersPage(): React.ReactElement {
+    const router = useRouter();
+    router.push("/teachers/english");
 
     return (
         <>

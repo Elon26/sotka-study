@@ -29,6 +29,8 @@ export default function BasicStudentsArea(): React.ReactElement {
                 <CustomerButtons
                     withSign={true}
                     target="students"
+                    firstButtonColor="purple"
+                    secondButtonColor="gray-dark"
                 />
                 <WhiteSpace
                     size="middle"
@@ -54,6 +56,8 @@ export default function BasicStudentsArea(): React.ReactElement {
                 <CustomerButtons
                     withSign={false}
                     target="students"
+                    firstButtonColor="purple"
+                    secondButtonColor="gray-dark"
                 />
                 <WhiteSpace
                     size="big"
