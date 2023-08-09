@@ -1,0 +1,56 @@
+@import "../../../../data/variables.scss";
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+
+    @media (max-width: $md4) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.button {
+    width: 280px;
+    height: 80px;
+    background-color: $color-gray-dark;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition:
+        border 0.3s ease 0s,
+        background-color 0.3s ease 0s;
+
+    &.selected {
+        border: 2px solid $color-gray-light;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-gray-dark-hover;
+        }
+    }
+
+    &.disabled {
+        color: rgba(255, 255, 255, 0.3);
+        cursor: auto;
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: $color-gray-dark;
+            }
+        }
+    }
+
+    @media (max-width: $md2) {
+        font-size: 20px;
+        width: 200px;
+        height: 60px;
+    }
+}

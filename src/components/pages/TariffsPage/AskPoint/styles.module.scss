@@ -1,0 +1,32 @@
+@import "../../../../data/variables.scss";
+
+.button {
+    margin: 0 auto;
+    width: 280px;
+    height: 80px;
+    background-color: $color-gray-dark;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid $color-gray-light;
+    transition: background-color 0.3s ease 0s;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-gray-dark-hover;
+        }
+    }
+
+    @media (max-width: $md2) {
+        width: 200px;
+        height: 60px;
+    }
+}
+
+.rangeInput {
+    width: 600px;
+    margin: 0 auto;
+}

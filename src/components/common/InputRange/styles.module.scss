@@ -1,0 +1,79 @@
+@import "../../../data/variables.scss";
+
+.wrapper {
+    @media (max-width: $md4) {
+        margin: 0 20px;
+    }
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.trackArea {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.track {
+    height: 12px;
+    width: 100%;
+    border-radius: 24px;
+}
+
+.rollerOuter {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: $color-white;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.rollerInner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-gray-light;
+}
+
+.output {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: $color-gray-dark;
+    top: 40px;
+    transform: translate(-50%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid $color-gray-dark;
+    }
+
+    @media (max-width: $md4) {
+        width: 60px;
+    }
+}
