@@ -73,5 +73,5 @@ Install dependencies and run the development server:
 
 ## 📌 Notes
 
-This project was built as a web platform with a strong focus on UI/UX and responsive design.  
-It demonstrates experience with React + Next.js, complex layouts, and integration with cloud services.
+This project was built as a web platform with a strong focus on UI/UX and responsive design
+It demonstrates experience with React + Next.js, complex layouts, and integration with cloud services
