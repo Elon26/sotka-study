@@ -51,7 +51,7 @@ Clone the repository and install dependencies to run the project locally:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Elon26/sotka-study.git](https://github.com/Elon26/sotka-study.git)
+git clone https://github.com/Elon26/sotka-study.git
 
 # Install dependencies
 npm install
