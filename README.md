@@ -1,76 +1,62 @@
 # Sotka — Online Exam Preparation Platform (EGE & OGE)
 
-A web-based educational platform for preparing students for Russian state exams (EGE and OGE).  
-The project provides information about tutors, pricing plans, and learning opportunities in a visually rich and responsive interface.
+A modern, high-performance web platform for preparing students for Russian state exams (EGE and OGE), connecting them with qualified tutors and transparent study plans.
 
 ---
 
-## 📚 About the Project
+## 🏗️ Architecture & Engineering Approach
 
-Sotka is an educational platform designed to help students prepare for EGE and OGE exams by connecting them with tutors and providing clear information about available study plans and pricing.
-
-The project focuses on a modern UI, rich visual content, and a smooth user experience across devices.
+- **Component-Driven Development:** Built with a modular structure, ensuring high reusability of UI components and clean separation of concerns.
+- **SSR & Performance:** Leveraged Next.js Server-Side Rendering and static generation to optimize Core Web Vitals, initial load times, and SEO indexing.
+- **Scalable State Management:** Centralized application state and predictable data flow managed via Redux.
+- **Type Safety:** Strict TypeScript configuration across the entire codebase to reduce runtime errors and improve developer experience (DX).
 
 ---
 
 ## 🧰 Tech Stack
 
-**Framework / Platform**
-- React  
-- Next.js  
-- TypeScript  
-
-**State Management**
-- Redux  
-
-**Backend / Services**
-- Firebase  
+- **Framework:** Next.js (App / Pages Router), React 19
+- **Language:** TypeScript
+- **State Management:** Redux Toolkit / Redux
+- **Backend & Services:** Firebase (Auth, Firestore / Storage)
+- **Styling & UI:** Tailwind CSS / Modular CSS, responsive design patterns
+- **Quality Assurance:** ESLint, Prettier
 
 ---
 
-## ✨ Features
+## ✨ Key Features & Highlights
 
-- 🏠 Main page with platform overview  
-- 👩‍🏫 Tutor pages:
-  - separate sections for EGE tutors  
-  - separate sections for OGE tutors  
-- 💳 Pricing page with available plans  
-- 🎨 Rich UI:
-  - large amount of graphics and media content  
-  - complex and visually detailed layouts  
-- 📱 Fully responsive layout for all screen sizes  
-- 🚧 404 page with redirect for non-existing routes  
-- ⏳ Loading indicators (spinners) for all async actions  
+- **Dynamic Tutor Catalog:** Dedicated, filterable sections for EGE and OGE preparation tracks with rich tutor profiles.
+- **Transparent Pricing & Plans:** Interactive pricing pages displaying subscription tiers and available study opportunities.
+- **Complex UI & Media Integration:** Handled heavy visual content and media assets with optimized rendering pipelines and lazy loading.
+- **Robust Error & Async Handling:** Clean fallback states, custom 404 routing, and smooth asynchronous action indicators.
+- **Fully Responsive:** Mobile-first architecture ensuring seamless experience across all viewports.
 
 ---
 
-## 🧩 Core Entities
+## 👨‍💻 Role & Engineering Contributions
 
-- Tutors for EGE exam preparation  
-- Tutors for OGE exam preparation  
-
----
-
-## 👨‍💻 Role & Responsibilities
-
-- Implemented responsive layouts for all pages  
-- Built page routing and 404 handling in Next.js  
-- Integrated Firebase services  
-- Implemented state management with Redux  
-- Ensured smooth UX with loading states for async actions  
-- Worked on complex UI with rich media content  
+- Designed and implemented responsive, component-driven layouts for high-density UI pages.
+- Configured Next.js routing structure, dynamic imports, and custom error handling (404/loading boundaries).
+- Integrated Firebase backend services for real-time data fetching and user state synchronization.
+- Structured predictable state management using Redux to handle complex application flows.
+- Optimized asset delivery and component rendering to maintain high performance under heavy media loads.
 
 ---
 
-## 🚀 Local Setup
+## 🚀 Getting Started
 
-Install dependencies and run the development server:
+Clone the repository and install dependencies to run the project locally:
 
-- npm install
-- npm run dev
+```bash
+# Clone the repository
+git clone [https://github.com/Elon26/sotka-platform.git](https://github.com/Elon26/sotka-platform.git)
 
----
+# Install dependencies
+npm install
 
+# Run the development server
+npm run dev
 ## 📌 Notes
 
 This project was built as a web platform with a strong focus on UI/UX and responsive design
